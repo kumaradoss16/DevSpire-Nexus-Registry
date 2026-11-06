@@ -43,7 +43,7 @@ All records are validated against formal JSON Schemas and primary source evidenc
 | **AI Tools** | [`datasets/ai-tools.json`](datasets/ai-tools.json) | **403** | 14 | Platform, hosting, pricing class, verified icon assets |
 | **AI Models** | [`datasets/ai-models.json`](datasets/ai-models.json) | **300** | 12 | Weights (open/closed), context windows, parameter sizes, modalities |
 | **Developer Resources** | [`datasets/developer-resources.json`](datasets/developer-resources.json) | **300** | 12 | 32 verified Developer Quick Starts, repos, docs, SDKs |
-| **Global Total** | — | **1,003** | 38 | 100% unique slug identifiers across all registries |
+| **Global Total** | - | **1,003** | 38 | 100% unique slug identifiers across all registries |
 
 ---
 
@@ -120,12 +120,12 @@ if qs and qs["available"]:
 
 Deterministic, reproducible static JSON endpoints are compiled into `api/v1/`:
 
-- [`api/v1/tools.json`](api/v1/tools.json) — 403 AI Tools
-- [`api/v1/models.json`](api/v1/models.json) — 300 AI Models
-- [`api/v1/developer-resources.json`](api/v1/developer-resources.json) — 300 Developer Resources
-- [`api/v1/categories.json`](api/v1/categories.json) — Taxonomy breakdown
-- [`api/v1/stats.json`](api/v1/stats.json) — Registry-wide counts and distributions
-- [`api/v1/catalog.json`](api/v1/catalog.json) — SHA-256 integrity manifest
+- [`api/v1/tools.json`](api/v1/tools.json) - 403 AI Tools
+- [`api/v1/models.json`](api/v1/models.json) - 300 AI Models
+- [`api/v1/developer-resources.json`](api/v1/developer-resources.json) - 300 Developer Resources
+- [`api/v1/categories.json`](api/v1/categories.json) - Taxonomy breakdown
+- [`api/v1/stats.json`](api/v1/stats.json) - Registry-wide counts and distributions
+- [`api/v1/catalog.json`](api/v1/catalog.json) - SHA-256 integrity manifest
 
 Re-generate static endpoints deterministically:
 ```bash
