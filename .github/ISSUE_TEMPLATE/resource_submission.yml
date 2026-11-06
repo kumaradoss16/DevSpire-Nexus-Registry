@@ -1,0 +1,66 @@
+name: Resource Submission
+description: Propose adding a new AI Tool, AI Model, or Developer Resource to the registry.
+title: "[Submission]: <Resource Name>"
+labels: ["submission", "triage"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thank you for submitting a new resource to DevSpire Nexus Registry!
+        Submissions require verified official primary sources. No synthetic or unverified entries are accepted.
+  - type: dropdown
+    id: registry_type
+    attributes:
+      label: Target Registry
+      options:
+        - AI Tool (End-user AI applications and SaaS products)
+        - AI Model (Foundation models, fine-tunes, open weights)
+        - Developer Resource (Frameworks, SDKs, vector databases, runtimes)
+    validations:
+      required: true
+  - type: input
+    id: name
+    attributes:
+      label: Resource Name
+      placeholder: "e.g. vLLM"
+    validations:
+      required: true
+  - type: input
+    id: official_url
+    attributes:
+      label: Official Website / Primary URL
+      placeholder: "https://vllm.ai"
+    validations:
+      required: true
+  - type: textarea
+    id: description
+    attributes:
+      label: Technical Summary
+      description: Concise description of the resource's function and purpose (min 20 characters).
+      placeholder: "High-throughput and memory-efficient LLM serving engine with PagedAttention..."
+    validations:
+      required: true
+  - type: input
+    id: category
+    attributes:
+      label: Category
+      placeholder: "e.g. Model Serving & Inference"
+    validations:
+      required: true
+  - type: input
+    id: license
+    attributes:
+      label: License & Pricing
+      placeholder: "e.g. Apache 2.0 (Open Source)"
+    validations:
+      required: true
+  - type: textarea
+    id: evidence
+    attributes:
+      label: Primary Source Evidence
+      description: Provide 1-2 primary source URLs confirming existence, documentation, or code.
+      placeholder: |
+        - Official Docs: https://docs.vllm.ai/
+        - GitHub Repository: https://github.com/vllm-project/vllm
+    validations:
+      required: true

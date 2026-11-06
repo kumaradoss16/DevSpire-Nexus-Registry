@@ -1,0 +1,18 @@
+cff-version: 1.2.0
+message: "If you use DevSpire Nexus Registry in your research or developer tools, please cite it as below."
+authors:
+  - name: "DevSpire Nexus Contributors"
+    website: "https://devspirehub.com"
+title: "DevSpire Nexus Registry: Canonical Open-Source AI Resources Intelligence Dataset and Specification"
+version: 1.0.0
+date-released: 2026-11-06
+url: "https://github.com/kumaradoss16/DevSpire-Nexus-Registry"
+repository-code: "https://github.com/kumaradoss16/DevSpire-Nexus-Registry"
+keywords:
+  - "ai-tools"
+  - "ai-models"
+  - "developer-resources"
+  - "artificial-intelligence"
+  - "open-source-registry"
+  - "machine-learning"
+license: MIT

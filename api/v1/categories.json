@@ -1,0 +1,167 @@
+{
+  "_meta": {
+    "api_version": "v1",
+    "generated_at": "2026-11-06T12:48:09Z",
+    "schema_version": "1.0.0"
+  },
+  "registries": {
+    "ai-models": [
+      {
+        "count": 74,
+        "name": "Large Language Models"
+      },
+      {
+        "count": 56,
+        "name": "Vision & Multimodal"
+      },
+      {
+        "count": 29,
+        "name": "Embeddings & Rerankers"
+      },
+      {
+        "count": 26,
+        "name": "Small / Edge Models"
+      },
+      {
+        "count": 24,
+        "name": "Audio & Speech"
+      },
+      {
+        "count": 23,
+        "name": "Coding Models"
+      },
+      {
+        "count": 17,
+        "name": "Image Generation"
+      },
+      {
+        "count": 15,
+        "name": "Reasoning & CoT"
+      },
+      {
+        "count": 10,
+        "name": "Specialized Models"
+      },
+      {
+        "count": 9,
+        "name": "3D Generation"
+      },
+      {
+        "count": 9,
+        "name": "Robotics & Embodied"
+      },
+      {
+        "count": 8,
+        "name": "Video Generation"
+      }
+    ],
+    "ai-tools": [
+      {
+        "count": 99,
+        "name": "Business & Enterprise"
+      },
+      {
+        "count": 53,
+        "name": "Coding & Development"
+      },
+      {
+        "count": 42,
+        "name": "Image & Design"
+      },
+      {
+        "count": 35,
+        "name": "Audio & Speech"
+      },
+      {
+        "count": 31,
+        "name": "Search & Research"
+      },
+      {
+        "count": 31,
+        "name": "Video"
+      },
+      {
+        "count": 30,
+        "name": "Infrastructure & Security"
+      },
+      {
+        "count": 25,
+        "name": "Productivity"
+      },
+      {
+        "count": 14,
+        "name": "Meetings & Communication"
+      },
+      {
+        "count": 13,
+        "name": "Data & Analytics"
+      },
+      {
+        "count": 13,
+        "name": "Writing & Content"
+      },
+      {
+        "count": 6,
+        "name": "Assistants & Chatbots"
+      },
+      {
+        "count": 6,
+        "name": "Industry & Specialized"
+      },
+      {
+        "count": 5,
+        "name": "Agents & Automation"
+      }
+    ],
+    "developer-resources": [
+      {
+        "count": 69,
+        "name": "Model Serving & Inference"
+      },
+      {
+        "count": 40,
+        "name": "Agent Frameworks"
+      },
+      {
+        "count": 35,
+        "name": "APIs, Gateways & Protocols"
+      },
+      {
+        "count": 30,
+        "name": "Developer Tooling & QA"
+      },
+      {
+        "count": 29,
+        "name": "Vector Databases & RAG"
+      },
+      {
+        "count": 28,
+        "name": "Evaluation & Observability"
+      },
+      {
+        "count": 19,
+        "name": "Fine-Tuning & Optimization"
+      },
+      {
+        "count": 14,
+        "name": "Local Runtimes"
+      },
+      {
+        "count": 13,
+        "name": "AI Security & Guardrails"
+      },
+      {
+        "count": 13,
+        "name": "Cloud & GPU Infrastructure"
+      },
+      {
+        "count": 7,
+        "name": "Data & Annotation"
+      },
+      {
+        "count": 3,
+        "name": "Robotics & Embodied AI"
+      }
+    ]
+  }
+}

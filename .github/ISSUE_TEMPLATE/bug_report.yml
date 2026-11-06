@@ -1,0 +1,28 @@
+name: Bug Report / Tooling Issue
+description: Report a bug in the Python CLI, SDK, static API, or JSON Schema.
+title: "[Bug]: <Issue Summary>"
+labels: ["bug", "tooling"]
+body:
+  - type: textarea
+    id: description
+    attributes:
+      label: Bug Description
+      placeholder: "A clear description of what the bug is."
+    validations:
+      required: true
+  - type: input
+    id: component
+    attributes:
+      label: Affected Component
+      placeholder: "e.g. CLI (validate), Python SDK, api/v1/catalog.json, Schemas"
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: Steps to Reproduce
+      placeholder: |
+        1. Run `nexus-registry validate`
+        2. ...
+    validations:
+      required: true

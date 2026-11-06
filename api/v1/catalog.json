@@ -1,0 +1,40 @@
+{
+  "_meta": {
+    "api_version": "v1",
+    "brand": "DevSpireHub.com",
+    "endpoints": {
+      "categories.json": {
+        "path": "api/v1/categories.json",
+        "sha256": "321f1c5eff2a4ad28d7abc49e94588757498cfeea87c12d48db8c5918f5e9ed9",
+        "size_bytes": 3102
+      },
+      "developer-resources.json": {
+        "path": "api/v1/developer-resources.json",
+        "records": 300,
+        "sha256": "f05d19694fce54550d71e9efdf11b254d410f76d2dd751cd13bbe955d9b794b1",
+        "size_bytes": 692347
+      },
+      "models.json": {
+        "path": "api/v1/models.json",
+        "records": 300,
+        "sha256": "c248f6cfffa71766017cd144547c2acef325a227c40af7a52d1948a4bc335db8",
+        "size_bytes": 501830
+      },
+      "stats.json": {
+        "path": "api/v1/stats.json",
+        "sha256": "13b0f3021b165680eb2c6fd92e99f40c5188373bba779f0979f53ad1b1e4c71f",
+        "size_bytes": 2341
+      },
+      "tools.json": {
+        "path": "api/v1/tools.json",
+        "records": 403,
+        "sha256": "e2f47379c9785a22220ae5412eb775426ef07110382089bcfb79be907b74ae5e",
+        "size_bytes": 604808
+      }
+    },
+    "generated_at": "2026-11-06T12:48:09Z",
+    "name": "DevSpire Nexus Registry Catalog",
+    "total_resources": 1003,
+    "version": "1.0.0"
+  }
+}

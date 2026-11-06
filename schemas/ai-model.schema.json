@@ -1,0 +1,57 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://devspirehub.com/schemas/ai-model.schema.json",
+  "title": "DevSpire Nexus AI Model Record",
+  "description": "Schema contract for AI foundation models, fine-tunes, and model families.",
+  "allOf": [
+    { "$ref": "common.schema.json" },
+    {
+      "type": "object",
+      "required": ["publisher", "family", "weights", "modalities"],
+      "properties": {
+        "publisher": {
+          "type": "string",
+          "description": "Lab, organization, or author releasing the model weights or API."
+        },
+        "family": {
+          "type": "string",
+          "description": "Associated model series or architecture family (e.g. Llama, Mistral, GPT, Claude)."
+        },
+        "weights": {
+          "type": "string",
+          "enum": ["open", "closed", "hybrid", "unspecified"],
+          "description": "Weights accessibility classification."
+        },
+        "open_weights": {
+          "type": "boolean",
+          "description": "Whether weights are downloadable and locally runnable."
+        },
+        "license_group": {
+          "type": ["string", "null"],
+          "description": "Grouped license taxonomy (e.g. MIT / Apache 2.0, Permissive Community, Commercial)."
+        },
+        "params": {
+          "type": ["string", "null"],
+          "description": "Parameter size notation (e.g. 8B, 70B, 405B, MoE, Multimodal)."
+        },
+        "context": {
+          "type": ["string", "null"],
+          "description": "Human-readable context window description (e.g. 128K tokens, 1M tokens)."
+        },
+        "context_k": {
+          "type": ["number", "null"],
+          "description": "Numeric context window length in thousands of tokens (e.g. 128 for 128K)."
+        },
+        "moe": {
+          "type": ["boolean", "null"],
+          "description": "Whether the architecture utilizes Mixture-of-Experts routing."
+        },
+        "modalities": {
+          "type": "array",
+          "items": { "type": "string" },
+          "description": "Supported input and output modalities (e.g. Text, Code, Vision, Audio, Video)."
+        }
+      }
+    }
+  ]
+}

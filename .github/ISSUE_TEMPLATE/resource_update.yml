@@ -1,0 +1,30 @@
+name: Resource Update / Re-verification
+description: Report outdated metadata, broken links, or updated license info for an existing resource.
+title: "[Update]: <Resource Name> (<Resource ID>)"
+labels: ["maintenance", "triage"]
+body:
+  - type: input
+    id: resource_id
+    attributes:
+      label: Resource Slug ID
+      placeholder: "e.g. langchain"
+    validations:
+      required: true
+  - type: checkboxes
+    id: update_types
+    attributes:
+      label: What requires updating?
+      options:
+        - label: Broken or redirected official URL
+        - label: Updated pricing or license change
+        - label: New model parameter sizes or context window expansion
+        - label: Updated Developer Quick Start package or syntax
+        - label: Deprecated or retired resource
+  - type: textarea
+    id: details
+    attributes:
+      label: Details and Evidence
+      description: Explain the required change and provide official documentation links.
+      placeholder: "Link to official changelog or release notes establishing the update."
+    validations:
+      required: true
