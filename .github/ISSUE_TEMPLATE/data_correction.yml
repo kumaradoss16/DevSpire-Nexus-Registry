@@ -1,0 +1,46 @@
+name: Data Correction / Metadata Update
+description: Report inaccurate metadata, broken URLs, pricing changes, or new model specs.
+title: "[Correction]: <Resource Name> (<Resource ID>)"
+labels: ["data-correction", "triage"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Use this form to propose updates or corrections to existing catalog records.
+        All corrections must cite authoritative primary sources (e.g. official docs, release notes).
+  - type: input
+    id: resource_id
+    attributes:
+      label: Resource Identifier (Slug)
+      description: The canonical ID (e.g., langchain, gpt-4o, ollama).
+      placeholder: "e.g. vllm"
+    validations:
+      required: true
+  - type: checkboxes
+    id: change_types
+    attributes:
+      label: What requires updating?
+      options:
+        - label: Broken or redirected official URL
+        - label: Pricing tier change (e.g. Free to Freemium, Commercial pricing update)
+        - label: License change or open-source clarification
+        - label: New model parameter sizes or context window expansion
+        - label: Developer Quick Start command or syntax update
+        - label: Deprecated or retired software
+  - type: textarea
+    id: current_vs_proposed
+    attributes:
+      label: Current vs. Proposed Information
+      placeholder: |
+        Current context window: 128K tokens
+        Proposed context window: 1M tokens
+    validations:
+      required: true
+  - type: textarea
+    id: evidence
+    attributes:
+      label: Authoritative Evidence URLs
+      description: Provide official links establishing this change.
+      placeholder: "https://example.com/blog/release-announcement"
+    validations:
+      required: true

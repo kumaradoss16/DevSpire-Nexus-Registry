@@ -4,9 +4,40 @@ Lightweight, zero-dependency offline client for querying and embedding
 DevSpire Nexus Registry resources into applications and pipelines.
 """
 
+import importlib.resources
 import json
 from pathlib import Path
 from typing import Dict, List, Optional, Any
+
+
+def resolve_datasets_dir(custom_root: Optional[Path] = None) -> Path:
+    """Resolve the canonical datasets directory across environments."""
+    if custom_root is not None:
+        p = Path(custom_root)
+        if (p / "datasets").exists() and (p / "datasets" / "ai-tools.json").exists():
+            return p / "datasets"
+        if (p / "ai-tools.json").exists():
+            return p
+
+    # 1. Local checkout in repo
+    local_repo = Path(__file__).resolve().parent.parent.parent / "datasets"
+    if local_repo.exists() and (local_repo / "ai-tools.json").exists():
+        return local_repo
+
+    # 2. Bundled package data
+    try:
+        pkg_data = Path(str(importlib.resources.files("nexus_registry").joinpath("data", "datasets")))
+        if pkg_data.exists() and (pkg_data / "ai-tools.json").exists():
+            return pkg_data
+    except Exception:
+        pass
+
+    # 3. Local relative data directory
+    local_data = Path(__file__).resolve().parent / "data" / "datasets"
+    if local_data.exists() and (local_data / "ai-tools.json").exists():
+        return local_data
+
+    return local_repo
 
 
 class RegistryClient:
@@ -15,12 +46,7 @@ class RegistryClient:
     def __init__(self, root_dir: Optional[Path] = None, repo_root: Optional[Path] = None):
         if root_dir is None:
             root_dir = repo_root
-        if root_dir is None:
-            self.root_dir = Path(__file__).resolve().parent.parent.parent
-        else:
-            self.root_dir = Path(root_dir)
-
-        self.datasets_dir = self.root_dir / "datasets"
+        self.datasets_dir = resolve_datasets_dir(root_dir)
         self._cache: Dict[str, List[Dict[str, Any]]] = {}
         self._index: Dict[str, Dict[str, Any]] = {}
         self._loaded = False
@@ -44,11 +70,10 @@ class RegistryClient:
                     for r in records:
                         rec_id = r.get("id")
                         if rec_id:
-                            # Attach normalized registry key
                             reg_full = "ai-tools" if reg_key == "tools" else ("ai-models" if reg_key == "models" else "developer-resources")
                             r_copy = dict(r)
                             r_copy["_registry"] = reg_full
-                            self._index[rec_id.lower()] = {
+                            self._index[str(rec_id).lower()] = {
                                 "registry": reg_full,
                                 "record": r_copy
                             }
@@ -73,7 +98,7 @@ class RegistryClient:
     def get(self, resource_id: str) -> Optional[Dict[str, Any]]:
         """Retrieve a single resource record by ID across all registries."""
         self._ensure_loaded()
-        item = self._index.get(resource_id.strip().lower())
+        item = self._index.get(str(resource_id).strip().lower())
         return item["record"] if item else None
 
     def get_resource(self, resource_id: str) -> Optional[Dict[str, Any]]:
@@ -96,7 +121,7 @@ class RegistryClient:
     ) -> List[Dict[str, Any]]:
         """Search records by keyword across name, description, category, and tags."""
         self._ensure_loaded()
-        q = query.strip().lower()
+        q = str(query).strip().lower()
 
         active_registries = [registry] if registry and registry in self._cache else list(self._cache.keys())
         results = []

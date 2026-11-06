@@ -1,4 +1,4 @@
-name: Validate Datasets
+name: Validate Datasets & API Integrity
 
 on:
   push:
@@ -7,12 +7,13 @@ on:
       - 'datasets/**'
       - 'schemas/**'
       - 'src/**'
+      - 'scripts/**'
+      - 'api/**'
   pull_request:
     branches: [main]
-    paths:
-      - 'datasets/**'
-      - 'schemas/**'
-      - 'src/**'
+
+permissions:
+  contents: read
 
 jobs:
   validate:
@@ -34,3 +35,14 @@ jobs:
       - name: Run Schema and Dataset Validation
         run: |
           python -m nexus_registry.cli validate
+
+      - name: Verify Static API Artifacts & Drift Check
+        run: |
+          python scripts/generate_api.py
+          git diff --exit-code api/v1/ || (echo "Error: Static API artifacts in api/v1/ are out of date. Run 'python scripts/generate_api.py' and commit changes." && exit 1)
+
+      - name: Test Wheel Build & Standalone Client Execution
+        run: |
+          python -m pip install wheel
+          pip wheel --no-deps -w dist .
+          python -m unittest tests/test_standalone.py

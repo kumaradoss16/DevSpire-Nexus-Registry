@@ -4,6 +4,7 @@ Strict offline validation of resource datasets, data contracts, and Quick Start 
 Zero network access, zero arbitrary code execution.
 """
 
+import importlib.resources
 import json
 import re
 from dataclasses import dataclass, field
@@ -12,10 +13,44 @@ from pathlib import Path
 from typing import Dict, List, Optional, Any, Set
 from urllib.parse import urlparse
 
+from .client import resolve_datasets_dir
+
+
+def resolve_schemas_dir(custom_root: Optional[Path] = None) -> Path:
+    """Resolve the canonical schemas directory across environments."""
+    if custom_root is not None:
+        p = Path(custom_root)
+        if (p / "schemas").exists() and (p / "schemas" / "common.schema.json").exists():
+            return p / "schemas"
+        if (p / "common.schema.json").exists():
+            return p
+
+    # 1. Local checkout in repo
+    local_repo = Path(__file__).resolve().parent.parent.parent / "schemas"
+    if local_repo.exists() and (local_repo / "common.schema.json").exists():
+        return local_repo
+
+    # 2. Bundled package data
+    try:
+        pkg_data = Path(str(importlib.resources.files("nexus_registry").joinpath("data", "schemas")))
+        if pkg_data.exists() and (pkg_data / "common.schema.json").exists():
+            return pkg_data
+    except Exception:
+        pass
+
+    # 3. Local relative data directory
+    local_data = Path(__file__).resolve().parent / "data" / "schemas"
+    if local_data.exists() and (local_data / "common.schema.json").exists():
+        return local_data
+
+    return local_repo
+
+
 class Severity(str, Enum):
     INFO = "INFO"
     WARNING = "WARNING"
     ERROR = "ERROR"
+
 
 @dataclass
 class ValidationIssue:
@@ -24,6 +59,7 @@ class ValidationIssue:
     resource_id: Optional[str]
     field: Optional[str]
     message: str
+
 
 @dataclass
 class ValidationReport:
@@ -100,14 +136,9 @@ class RegistryValidator:
     def __init__(self, root_dir: Optional[Path] = None, repo_root: Optional[Path] = None):
         if root_dir is None:
             root_dir = repo_root
-        if root_dir is None:
-            # Default to repo root
-            self.root_dir = Path(__file__).resolve().parent.parent.parent
-        else:
-            self.root_dir = Path(root_dir)
-
-        self.datasets_dir = self.root_dir / "datasets"
-        self.schemas_dir = self.root_dir / "schemas"
+        self.root_dir = Path(root_dir) if root_dir else Path(__file__).resolve().parent.parent.parent
+        self.datasets_dir = resolve_datasets_dir(root_dir)
+        self.schemas_dir = resolve_schemas_dir(root_dir)
 
     def validate_url(self, url: str) -> bool:
         if not url or not isinstance(url, str):
@@ -240,8 +271,8 @@ class RegistryValidator:
 
         # 6. Domain-specific checks
         if reg_key == "ai-tools":
-            if not r.get("org"):
-                report.issues.append(ValidationIssue(Severity.ERROR, reg_key, rec_id, "org", "AI Tool missing required developer organization 'org'"))
+            if not r.get("org") and not r.get("provider"):
+                report.issues.append(ValidationIssue(Severity.ERROR, reg_key, rec_id, "org", "AI Tool missing required developer organization 'org' or 'provider'"))
 
         elif reg_key == "ai-models":
             for mf in ["publisher", "family", "weights", "modalities"]:

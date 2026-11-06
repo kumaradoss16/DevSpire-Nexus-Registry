@@ -1,0 +1,133 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://devspirehub.com/schemas/developer-resource.schema.json",
+  "title": "DevSpire Nexus Developer Resource Record",
+  "description": "Schema contract for developer frameworks, libraries, SDKs, vector databases, and developer infrastructure.",
+  "allOf": [
+    { "$ref": "common.schema.json" },
+    {
+      "type": "object",
+      "required": [
+        "resource_subtype",
+        "programming_languages",
+        "developer_quick_start"
+      ],
+      "properties": {
+        "resource_subtype": {
+          "type": ["string", "null"],
+          "description": "Specific functional sub-archetype (e.g. Agent Framework, Vector Database, Local Runtime)."
+        },
+        "documentation_url": {
+          "type": ["string", "null"],
+          "format": "uri",
+          "description": "Direct link to developer technical documentation."
+        },
+        "repository_url": {
+          "type": ["string", "null"],
+          "format": "uri",
+          "description": "Direct link to canonical source code repository."
+        },
+        "api_url": {
+          "type": ["string", "null"],
+          "format": "uri",
+          "description": "Link to API reference documentation or OpenAPI/Swagger specification."
+        },
+        "hosting": {
+          "type": ["array", "null"],
+          "items": { "type": "string" },
+          "description": "Supported hosting environments (e.g. Self-hosted, Managed Cloud)."
+        },
+        "programming_languages": {
+          "type": "array",
+          "items": { "type": "string" },
+          "description": "Supported programming languages."
+        },
+        "integrations": {
+          "type": ["array", "null"],
+          "items": { "type": "string" },
+          "description": "Key framework or database integrations."
+        },
+        "developer_quick_start": {
+          "type": "object",
+          "required": ["available"],
+          "properties": {
+            "available": {
+              "type": "boolean",
+              "description": "Whether an interactive, verified quick start guide exists for this resource."
+            },
+            "verification_status": {
+              "type": "string",
+              "enum": ["verified", "partially_verified", "unavailable", "pending_review"],
+              "description": "Quick start verification state."
+            },
+            "reason": {
+              "type": ["string", "null"],
+              "description": "Honest explanatory reason when quick start is unavailable."
+            },
+            "package_name": {
+              "type": ["string", "null"],
+              "description": "Canonical package identifier in primary package ecosystem (e.g. PyPI, npm, Cargo)."
+            },
+            "installation": {
+              "type": "array",
+              "items": {
+                "type": "object",
+                "required": ["pm", "command"],
+                "properties": {
+                  "pm": { "type": "string", "description": "Package manager / runtime (e.g. pip, uv, npm, pnpm, cargo, docker, curl, brew)." },
+                  "command": { "type": "string", "description": "Executable installation or run command." },
+                  "label": { "type": ["string", "null"], "description": "Display tab label." }
+                }
+              }
+            },
+            "documentation": {
+              "type": ["object", "null"],
+              "properties": {
+                "url": { "type": "string", "format": "uri" },
+                "title": { "type": "string" },
+                "domain": { "type": "string" }
+              }
+            },
+            "github": {
+              "type": ["object", "null"],
+              "properties": {
+                "url": { "type": "string", "format": "uri" },
+                "repo": { "type": "string" },
+                "default_branch": { "type": "string" },
+                "license": { "type": "string" }
+              }
+            },
+            "supported_languages": {
+              "type": "array",
+              "items": {
+                "type": "object",
+                "required": ["language", "support_type"],
+                "properties": {
+                  "language": { "type": "string" },
+                  "support_type": { "type": "string", "enum": ["official_sdk", "client_library", "rest_api", "community"] },
+                  "primary": { "type": "boolean" }
+                }
+              }
+            },
+            "examples": {
+              "type": "array",
+              "items": {
+                "type": "object",
+                "required": ["language", "code", "title"],
+                "properties": {
+                  "language": { "type": "string" },
+                  "label": { "type": ["string", "null"] },
+                  "title": { "type": "string" },
+                  "prerequisites": { "type": "array", "items": { "type": "string" } },
+                  "env_vars": { "type": "array", "items": { "type": "string" } },
+                  "code": { "type": "string" },
+                  "expected_output": { "type": ["string", "null"] }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  ]
+}

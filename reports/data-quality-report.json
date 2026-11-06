@@ -1,0 +1,32 @@
+{
+  "_meta": {
+    "generated_at": "2026-11-06T13:37:27Z",
+    "target_registry": "DevSpire Nexus Registry",
+    "version": "1.0.0"
+  },
+  "summary": {
+    "total_resources": 1003,
+    "registries": {
+      "ai-tools": 403,
+      "ai-models": 300,
+      "developer-resources": 300
+    },
+    "duplicate_slugs": 0,
+    "verified_records": 1003,
+    "records_with_evidence": 1003,
+    "records_with_multiple_evidence": 626,
+    "stale_records_count": 0,
+    "quickstarts_available": 32
+  },
+  "evidence_taxonomy": {
+    "official_website": 881,
+    "source_repository": 457,
+    "official_documentation": 116,
+    "announcement": 15,
+    "model_card": 206,
+    "research_paper": 63,
+    "package_registry": 2
+  },
+  "duplicates": [],
+  "stale_sample": []
+}

@@ -3,12 +3,12 @@
 Generate deterministic, static API endpoints for DevSpire Nexus Registry.
 
 Produces in api/v1/:
-  - tools.json
-  - models.json
-  - developer-resources.json
-  - categories.json
-  - stats.json
-  - catalog.json (with SHA256 checksums and byte counts)
+  - tools.json (deterministic)
+  - models.json (deterministic)
+  - developer-resources.json (deterministic)
+  - categories.json (deterministic)
+  - stats.json (deterministic)
+  - catalog.json (with build metadata, record counts, and SHA256 checksums)
 """
 
 import hashlib
@@ -45,11 +45,9 @@ def main():
     models = models_doc.get("records") or models_doc.get("items") or (models_doc if isinstance(models_doc, list) else [])
     dev_resources = dev_doc.get("records") or dev_doc.get("items") or (dev_doc if isinstance(dev_doc, list) else [])
 
-    now_iso = datetime.now(timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ")
-
     manifest_artifacts = {}
 
-    # 2. Write individual registry endpoints
+    # 2. Write individual registry endpoints (deterministic metadata)
     for name, items in [
         ("tools.json", tools),
         ("models.json", models),
@@ -60,7 +58,6 @@ def main():
                 "schema_version": "1.0.0",
                 "api_version": "v1",
                 "count": len(items),
-                "generated_at": now_iso,
                 "documentation": "https://github.com/kumaradoss16/DevSpire-Nexus-Registry#readme",
             },
             "items": items,
@@ -75,7 +72,7 @@ def main():
         }
         print(f"  [OK] {name}: {len(items)} records, {size} bytes, sha256={sha[:12]}...")
 
-    # 3. Write categories.json
+    # 3. Write categories.json (deterministic metadata)
     categories_by_registry = {}
     for reg_name, items in [
         ("ai-tools", tools),
@@ -95,7 +92,6 @@ def main():
         "_meta": {
             "schema_version": "1.0.0",
             "api_version": "v1",
-            "generated_at": now_iso,
         },
         "registries": categories_by_registry,
     }
@@ -107,7 +103,7 @@ def main():
     }
     print(f"  [OK] categories.json: {cat_size} bytes, sha256={cat_sha[:12]}...")
 
-    # 4. Write stats.json
+    # 4. Write stats.json (deterministic metadata)
     all_items = tools + models + dev_resources
     verified_count = sum(1 for x in all_items if x.get("verified"))
     qs_count = sum(1 for x in dev_resources if (x.get("developer_quick_start") or {}).get("available"))
@@ -123,7 +119,6 @@ def main():
         "_meta": {
             "schema_version": "1.0.0",
             "api_version": "v1",
-            "generated_at": now_iso,
         },
         "totals": {
             "all_resources": len(all_items),
@@ -135,8 +130,8 @@ def main():
             "developer_quick_starts_verified": qs_count,
         },
         "distribution": {
-            "pricing": pricing_dist,
             "license": license_dist,
+            "pricing": pricing_dist,
         },
     }
     stats_size, stats_sha = write_json_deterministic(API_V1_DIR / "stats.json", stats_payload)
@@ -147,7 +142,8 @@ def main():
     }
     print(f"  [OK] stats.json: {stats_size} bytes, sha256={stats_sha[:12]}...")
 
-    # 5. Write catalog.json manifest
+    # 5. Write catalog.json manifest (contains volatile build time and artifact checksums)
+    now_iso = datetime.now(timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ")
     catalog_payload = {
         "_meta": {
             "name": "DevSpire Nexus Registry Catalog",
