@@ -21,14 +21,14 @@ DevSpire Nexus operates under a strict two-repository architecture:
 
 ```
 ┌────────────────────────────────────────────────────────┐
-│              DevSpire-Nexus-Registry                    │
+│              DevSpire-Nexus-Registry                   │
 │   (Canonical Data · Schemas · CLI · Python SDK · API)  │
 └──────────────────────────┬─────────────────────────────┘
                            │ Consumes static API / JSON
                            ▼
 ┌────────────────────────────────────────────────────────┐
-│                   DevSpire-Nexus                        │
-│   (Web Frontend · Search UI · Personal Collections)     │
+│                   DevSpire-Nexus                       │
+│   (Web Frontend · Search UI · Personal Collections)    │
 └────────────────────────────────────────────────────────┘
 ```
 
