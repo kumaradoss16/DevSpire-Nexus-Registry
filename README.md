@@ -91,6 +91,10 @@ nexus-registry stats
 
 Embed or query registry datasets in Python applications without external network dependencies:
 
+```bash
+pip install nexus-registry
+```
+
 ```python
 from nexus_registry import RegistryClient
 
@@ -114,6 +118,10 @@ if qs and qs["available"]:
         print(f"  [{cmd['pm']}]: {cmd['command']}")
 ```
 
+- [SDK Guide & Quickstart](docs/sdk/README.md)
+- [SDK Full API Reference](docs/sdk/API_REFERENCE.md)
+- [SDK Installation Options](docs/sdk/INSTALLATION.md)
+
 ---
 
 ## 🌐 Static JSON API (v1)
@@ -126,17 +134,27 @@ Deterministic, reproducible static JSON endpoints are compiled into `api/v1/`:
 - [`api/v1/categories.json`](api/v1/categories.json) - Taxonomy breakdown
 - [`api/v1/stats.json`](api/v1/stats.json) - Registry-wide counts and distributions
 - [`api/v1/catalog.json`](api/v1/catalog.json) - SHA-256 integrity manifest
+- [`api/v1/schemas/`](api/v1/schemas/) - Distributed Draft 2020-12 JSON Schemas
 
 Re-generate static endpoints deterministically:
 ```bash
 python scripts/generate_api.py
 ```
 
+- [Static API Guide](docs/api/STATIC_API.md)
+- [API Contract Specification](docs/api/API_CONTRACT.md)
+- [Integration Code Examples (JS, Python, cURL)](docs/api/API_EXAMPLES.md)
+- [Client-Side Search & Filtering Guide](docs/api/SEARCH_AND_FILTERING.md)
+- [Pagination & Ingestion Architecture](docs/api/PAGINATION.md)
+- [Schema Versioning Specification](docs/api/SCHEMA_VERSIONING.md)
+- [API & Ecosystem Compatibility Policy](docs/api/COMPATIBILITY_POLICY.md)
+- [Artifact Generation Pipeline](docs/api/ARTIFACT_GENERATION.md)
+
 ---
 
 ## 🧪 Testing
 
-Run the automated test suite (30 unit tests covering schemas, datasets, validator, CLI, client, standalone loading, and reproducible API hashing):
+Run the automated test suite (60 unit tests covering schemas, datasets, validator, CLI, client, standalone loading, reproducible API hashing, backward compatibility, and developer experience):
 
 ```bash
 python -m unittest discover -s tests
@@ -146,16 +164,36 @@ python -m unittest discover -s tests
 
 ## 📚 Documentation
 
+### Architecture & Standards
 - [Architecture & System Boundaries](docs/architecture.md)
 - [Website Integration Guide](docs/website-integration.md)
 - [Data Model & Schemas](docs/data-model.md)
 - [Verification & Governance Policy](docs/verification-policy.md)
 - [Verification Guide](docs/verification-guide.md)
-- [Adding a Resource](docs/adding-a-resource.md)
-- [CLI Reference](docs/cli-reference.md)
 - [Licensing Policy](docs/licensing-policy.md)
-- [Release Process](docs/release-process.md)
 - [Technical Audit Reports](docs/audit/)
+
+### API & Developer Experience (Phase 2)
+- [Static API Guide](docs/api/STATIC_API.md)
+- [API Contract](docs/api/API_CONTRACT.md)
+- [Code Examples](docs/api/API_EXAMPLES.md)
+- [Schema Versioning](docs/api/SCHEMA_VERSIONING.md)
+- [Compatibility Policy](docs/api/COMPATIBILITY_POLICY.md)
+- [Search and Filtering Guide](docs/api/SEARCH_AND_FILTERING.md)
+- [Pagination Strategy](docs/api/PAGINATION.md)
+- [Compatibility Checker Guide](docs/api/COMPATIBILITY_CHECKS.md)
+- [Phase 2 Implementation Report](docs/api/PHASE_2_IMPLEMENTATION_REPORT.md)
+
+### Python SDK
+- [SDK Overview & Quickstart](docs/sdk/README.md)
+- [SDK API Reference](docs/sdk/API_REFERENCE.md)
+- [SDK Installation Guide](docs/sdk/INSTALLATION.md)
+
+### Release Management
+- [Release Policy](docs/releases/RELEASE_POLICY.md)
+- [Release Checklist](docs/releases/RELEASE_CHECKLIST.md)
+- [Python Package Release Guide](docs/releases/PYTHON_PACKAGE_RELEASE.md)
+- [Release Process](docs/release-process.md)
 
 ---
 

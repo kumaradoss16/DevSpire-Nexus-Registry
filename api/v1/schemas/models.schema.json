@@ -1,0 +1,86 @@
+{
+  "$id": "https://devspirehub.com/schemas/ai-model.schema.json",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "allOf": [
+    {
+      "$ref": "common.schema.json"
+    },
+    {
+      "properties": {
+        "context": {
+          "description": "Human-readable context window description (e.g. 128K tokens, 1M tokens).",
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "context_k": {
+          "description": "Numeric context window length in thousands of tokens (e.g. 128 for 128K).",
+          "type": [
+            "number",
+            "null"
+          ]
+        },
+        "family": {
+          "description": "Associated model series or architecture family (e.g. Llama, Mistral, GPT, Claude).",
+          "type": "string"
+        },
+        "license_group": {
+          "description": "Grouped license taxonomy (e.g. MIT / Apache 2.0, Permissive Community, Commercial).",
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "modalities": {
+          "description": "Supported input and output modalities (e.g. Text, Code, Vision, Audio, Video).",
+          "items": {
+            "type": "string"
+          },
+          "type": "array"
+        },
+        "moe": {
+          "description": "Whether the architecture utilizes Mixture-of-Experts routing.",
+          "type": [
+            "boolean",
+            "null"
+          ]
+        },
+        "open_weights": {
+          "description": "Whether weights are downloadable and locally runnable.",
+          "type": "boolean"
+        },
+        "params": {
+          "description": "Parameter size notation (e.g. 8B, 70B, 405B, MoE, Multimodal).",
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "publisher": {
+          "description": "Lab, organization, or author releasing the model weights or API.",
+          "type": "string"
+        },
+        "weights": {
+          "description": "Weights accessibility classification.",
+          "enum": [
+            "open",
+            "closed",
+            "hybrid",
+            "unspecified"
+          ],
+          "type": "string"
+        }
+      },
+      "required": [
+        "publisher",
+        "family",
+        "weights",
+        "modalities"
+      ],
+      "type": "object"
+    }
+  ],
+  "description": "Schema contract for AI foundation models, fine-tunes, and model families.",
+  "title": "DevSpire Nexus AI Model Record"
+}

@@ -1,0 +1,47 @@
+{
+  "$id": "https://devspirehub.com/schemas/ai-tool.schema.json",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "allOf": [
+    {
+      "$ref": "common.schema.json"
+    },
+    {
+      "properties": {
+        "hosting": {
+          "description": "Hosting models (e.g. Cloud, Self-hosted, Hybrid).",
+          "items": {
+            "type": "string"
+          },
+          "type": [
+            "array",
+            "null"
+          ]
+        },
+        "initials": {
+          "description": "Two-letter monogram identifier for UI fallback display.",
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "org": {
+          "description": "Primary developer organization or corporate parent.",
+          "type": "string"
+        },
+        "platform": {
+          "description": "Supported runtime platforms (e.g. Web, Desktop, Mobile).",
+          "type": [
+            "string",
+            "null"
+          ]
+        }
+      },
+      "required": [
+        "org"
+      ],
+      "type": "object"
+    }
+  ],
+  "description": "Schema contract for AI applications, software products, and assistants.",
+  "title": "DevSpire Nexus AI Tool Record"
+}

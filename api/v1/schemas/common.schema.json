@@ -1,0 +1,178 @@
+{
+  "$id": "https://devspirehub.com/schemas/common.schema.json",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "description": "Base schema contract for all DevSpire Nexus registry records.",
+  "properties": {
+    "canonical_id": {
+      "description": "Namespaced unique identifier across all registries.",
+      "pattern": "^(tool|model|developer_resource):[a-z0-9]+(-[a-z0-9]+)*$",
+      "type": "string"
+    },
+    "category": {
+      "description": "Primary categorization within the registry domain.",
+      "maxLength": 60,
+      "minLength": 2,
+      "type": "string"
+    },
+    "description": {
+      "description": "Concise technical summary of capability and scope.",
+      "maxLength": 1000,
+      "minLength": 10,
+      "type": "string"
+    },
+    "domain": {
+      "description": "Primary normalized hostname.",
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "evidence": {
+      "description": "List of [label, url] pairs establishing primary-source provenance.",
+      "items": {
+        "items": {
+          "type": "string"
+        },
+        "maxItems": 2,
+        "minItems": 2,
+        "type": "array"
+      },
+      "minItems": 1,
+      "type": "array"
+    },
+    "icon": {
+      "description": "Relative path to verified local brand/project icon asset.",
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "id": {
+      "description": "Unique, stable, lowercase slug identifier.",
+      "pattern": "^[a-z0-9]+(-[a-z0-9]+)*$",
+      "type": "string"
+    },
+    "license": {
+      "description": "Software or model license name.",
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "license_short": {
+      "description": "Abbreviated SPDX or conventional license identifier.",
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "name": {
+      "description": "Canonical human-readable resource name.",
+      "maxLength": 100,
+      "minLength": 2,
+      "type": "string"
+    },
+    "notes": {
+      "description": "Verification notes or license nuances.",
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "official_url": {
+      "description": "Primary canonical web URL or homepage.",
+      "format": "uri",
+      "pattern": "^https?://",
+      "type": "string"
+    },
+    "open_source": {
+      "description": "Whether source code is available under an OSI-approved license.",
+      "type": [
+        "boolean",
+        "null"
+      ]
+    },
+    "pricing": {
+      "description": "Human-readable pricing tier (e.g. Open Source, Free, Freemium, Paid, Open Weights).",
+      "type": "string"
+    },
+    "pricing_class": {
+      "description": "Normalized pricing taxonomy classification.",
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "provider": {
+      "description": "Publisher, vendor, or owning organization.",
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "resource_type": {
+      "description": "High-level functional archetype.",
+      "type": "string"
+    },
+    "self_hostable": {
+      "description": "Whether the resource can be executed locally or on self-managed infrastructure.",
+      "type": [
+        "boolean",
+        "null"
+      ]
+    },
+    "signup_required": {
+      "description": "Whether an account or registration is required for use.",
+      "type": [
+        "boolean",
+        "null"
+      ]
+    },
+    "source_category": {
+      "description": "Original taxonomy classification before normalization.",
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "status": {
+      "description": "Official verification state.",
+      "enum": [
+        "verified",
+        "partially_verified",
+        "unverified",
+        "deprecated"
+      ],
+      "type": "string"
+    },
+    "tags": {
+      "description": "Searchable technical keywords and tags.",
+      "items": {
+        "type": "string"
+      },
+      "type": "array"
+    },
+    "verified": {
+      "description": "ISO-8601 date string (YYYY-MM-DD) of last verification.",
+      "pattern": "^\\d{4}-\\d{2}-\\d{2}$",
+      "type": "string"
+    }
+  },
+  "required": [
+    "id",
+    "name",
+    "description",
+    "category",
+    "resource_type",
+    "official_url",
+    "pricing",
+    "license",
+    "tags",
+    "verified",
+    "status",
+    "evidence",
+    "canonical_id"
+  ],
+  "title": "DevSpire Nexus Resource Common Contract",
+  "type": "object"
+}

@@ -9,6 +9,11 @@ Produces in api/v1/:
   - categories.json (deterministic)
   - stats.json (deterministic)
   - catalog.json (with build metadata, record counts, and SHA256 checksums)
+  - schemas/
+      - tools.schema.json (deterministic)
+      - models.schema.json (deterministic)
+      - developer-resources.schema.json (deterministic)
+      - common.schema.json (deterministic)
 """
 
 import hashlib
@@ -18,7 +23,9 @@ from pathlib import Path
 
 REGISTRY_ROOT = Path(__file__).resolve().parent.parent
 DATASETS_DIR = REGISTRY_ROOT / "datasets"
+SCHEMAS_DIR = REGISTRY_ROOT / "schemas"
 API_V1_DIR = REGISTRY_ROOT / "api" / "v1"
+API_SCHEMAS_DIR = API_V1_DIR / "schemas"
 
 
 def compute_sha256(data: bytes) -> str:
@@ -46,6 +53,7 @@ def main():
     dev_resources = dev_doc.get("records") or dev_doc.get("items") or (dev_doc if isinstance(dev_doc, list) else [])
 
     manifest_artifacts = {}
+    manifest_schemas = {}
 
     # 2. Write individual registry endpoints (deterministic metadata)
     for name, items in [
@@ -142,17 +150,38 @@ def main():
     }
     print(f"  [OK] stats.json: {stats_size} bytes, sha256={stats_sha[:12]}...")
 
-    # 5. Write catalog.json manifest (contains volatile build time and artifact checksums)
+    # 5. Publish Schemas into api/v1/schemas/
+    schema_files = [
+        ("tools.schema.json", "ai-tool.schema.json"),
+        ("models.schema.json", "ai-model.schema.json"),
+        ("developer-resources.schema.json", "developer-resource.schema.json"),
+        ("common.schema.json", "common.schema.json"),
+    ]
+    for public_name, src_name in schema_files:
+        src_path = SCHEMAS_DIR / src_name
+        if src_path.exists():
+            schema_data = json.loads(src_path.read_text(encoding="utf-8"))
+            s_size, s_sha = write_json_deterministic(API_SCHEMAS_DIR / public_name, schema_data)
+            manifest_schemas[public_name] = {
+                "path": f"api/v1/schemas/{public_name}",
+                "size_bytes": s_size,
+                "sha256": s_sha,
+            }
+            print(f"  [OK] schemas/{public_name}: {s_size} bytes, sha256={s_sha[:12]}...")
+
+    # 6. Write catalog.json manifest (contains build time, artifact checksums, and schema references)
     now_iso = datetime.now(timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ")
     catalog_payload = {
         "_meta": {
             "name": "DevSpire Nexus Registry Catalog",
             "version": "1.0.0",
             "api_version": "v1",
+            "generator_version": "1.0.0",
             "brand": "DevSpireHub.com",
             "generated_at": now_iso,
             "total_resources": len(all_items),
             "endpoints": manifest_artifacts,
+            "schemas": manifest_schemas,
         }
     }
     cat_manifest_size, cat_manifest_sha = write_json_deterministic(API_V1_DIR / "catalog.json", catalog_payload)

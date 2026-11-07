@@ -14,8 +14,11 @@ class TestAPIReproducibility(unittest.TestCase):
 
         catalog = json.loads(catalog_path.read_text(encoding="utf-8"))
         endpoints = catalog.get("_meta", {}).get("endpoints", {})
+        schemas = catalog.get("_meta", {}).get("schemas", {})
 
-        for name, meta in endpoints.items():
+        all_artifacts = {**endpoints, **schemas}
+
+        for name, meta in all_artifacts.items():
             file_path = REPO_ROOT / meta["path"]
             self.assertTrue(file_path.exists(), f"Artifact {name} does not exist at {file_path}")
 

@@ -1,0 +1,254 @@
+{
+  "$id": "https://devspirehub.com/schemas/developer-resource.schema.json",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "allOf": [
+    {
+      "$ref": "common.schema.json"
+    },
+    {
+      "properties": {
+        "api_url": {
+          "description": "Link to API reference documentation or OpenAPI/Swagger specification.",
+          "format": "uri",
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "developer_quick_start": {
+          "properties": {
+            "available": {
+              "description": "Whether an interactive, verified quick start guide exists for this resource.",
+              "type": "boolean"
+            },
+            "documentation": {
+              "properties": {
+                "domain": {
+                  "type": "string"
+                },
+                "title": {
+                  "type": "string"
+                },
+                "url": {
+                  "format": "uri",
+                  "type": "string"
+                }
+              },
+              "type": [
+                "object",
+                "null"
+              ]
+            },
+            "examples": {
+              "items": {
+                "properties": {
+                  "code": {
+                    "type": "string"
+                  },
+                  "env_vars": {
+                    "items": {
+                      "type": "string"
+                    },
+                    "type": "array"
+                  },
+                  "expected_output": {
+                    "type": [
+                      "string",
+                      "null"
+                    ]
+                  },
+                  "label": {
+                    "type": [
+                      "string",
+                      "null"
+                    ]
+                  },
+                  "language": {
+                    "type": "string"
+                  },
+                  "prerequisites": {
+                    "items": {
+                      "type": "string"
+                    },
+                    "type": "array"
+                  },
+                  "title": {
+                    "type": "string"
+                  }
+                },
+                "required": [
+                  "language",
+                  "code",
+                  "title"
+                ],
+                "type": "object"
+              },
+              "type": "array"
+            },
+            "github": {
+              "properties": {
+                "default_branch": {
+                  "type": "string"
+                },
+                "license": {
+                  "type": "string"
+                },
+                "repo": {
+                  "type": "string"
+                },
+                "url": {
+                  "format": "uri",
+                  "type": "string"
+                }
+              },
+              "type": [
+                "object",
+                "null"
+              ]
+            },
+            "installation": {
+              "items": {
+                "properties": {
+                  "command": {
+                    "description": "Executable installation or run command.",
+                    "type": "string"
+                  },
+                  "label": {
+                    "description": "Display tab label.",
+                    "type": [
+                      "string",
+                      "null"
+                    ]
+                  },
+                  "pm": {
+                    "description": "Package manager / runtime (e.g. pip, uv, npm, pnpm, cargo, docker, curl, brew).",
+                    "type": "string"
+                  }
+                },
+                "required": [
+                  "pm",
+                  "command"
+                ],
+                "type": "object"
+              },
+              "type": "array"
+            },
+            "package_name": {
+              "description": "Canonical package identifier in primary package ecosystem (e.g. PyPI, npm, Cargo).",
+              "type": [
+                "string",
+                "null"
+              ]
+            },
+            "reason": {
+              "description": "Honest explanatory reason when quick start is unavailable.",
+              "type": [
+                "string",
+                "null"
+              ]
+            },
+            "supported_languages": {
+              "items": {
+                "properties": {
+                  "language": {
+                    "type": "string"
+                  },
+                  "primary": {
+                    "type": "boolean"
+                  },
+                  "support_type": {
+                    "enum": [
+                      "official_sdk",
+                      "client_library",
+                      "rest_api",
+                      "community"
+                    ],
+                    "type": "string"
+                  }
+                },
+                "required": [
+                  "language",
+                  "support_type"
+                ],
+                "type": "object"
+              },
+              "type": "array"
+            },
+            "verification_status": {
+              "description": "Quick start verification state.",
+              "enum": [
+                "verified",
+                "partially_verified",
+                "unavailable",
+                "pending_review"
+              ],
+              "type": "string"
+            }
+          },
+          "required": [
+            "available"
+          ],
+          "type": "object"
+        },
+        "documentation_url": {
+          "description": "Direct link to developer technical documentation.",
+          "format": "uri",
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "hosting": {
+          "description": "Supported hosting environments (e.g. Self-hosted, Managed Cloud).",
+          "items": {
+            "type": "string"
+          },
+          "type": [
+            "array",
+            "null"
+          ]
+        },
+        "integrations": {
+          "description": "Key framework or database integrations.",
+          "items": {
+            "type": "string"
+          },
+          "type": [
+            "array",
+            "null"
+          ]
+        },
+        "programming_languages": {
+          "description": "Supported programming languages.",
+          "items": {
+            "type": "string"
+          },
+          "type": "array"
+        },
+        "repository_url": {
+          "description": "Direct link to canonical source code repository.",
+          "format": "uri",
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "resource_subtype": {
+          "description": "Specific functional sub-archetype (e.g. Agent Framework, Vector Database, Local Runtime).",
+          "type": [
+            "string",
+            "null"
+          ]
+        }
+      },
+      "required": [
+        "resource_subtype",
+        "programming_languages",
+        "developer_quick_start"
+      ],
+      "type": "object"
+    }
+  ],
+  "description": "Schema contract for developer frameworks, libraries, SDKs, vector databases, and developer infrastructure.",
+  "title": "DevSpire Nexus Developer Resource Record"
+}

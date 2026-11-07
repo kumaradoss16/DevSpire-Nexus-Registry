@@ -12,6 +12,7 @@ from .verification_engine import VerificationEngine, VerificationReport, Verific
 from .freshness_checker import FreshnessChecker, FreshnessReport, FreshnessCategory
 from .quality_scorer import QualityScorer, QualityScoreReport, ScoreDimension, QualityGrade
 from .report_generator import QualityReportGenerator
+from .compatibility_checker import CompatibilityChecker, CompatibilityReport, SchemaChange, CompatibilityChangeType
 
 __all__ = [
     "StructuralValidator",
@@ -39,4 +40,8 @@ __all__ = [
     "ScoreDimension",
     "QualityGrade",
     "QualityReportGenerator",
+    "CompatibilityChecker",
+    "CompatibilityReport",
+    "SchemaChange",
+    "CompatibilityChangeType",
 ]
