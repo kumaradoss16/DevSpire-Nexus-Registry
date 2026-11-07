@@ -1,0 +1,60 @@
+{
+  "ai-tools": {
+    "registry": "ai-tools",
+    "total_records": 403,
+    "records_with_evidence": 403,
+    "records_with_zero_evidence": 0,
+    "records_with_primary_evidence": 401,
+    "coverage_percentage": 100.0,
+    "archetype_distribution": {
+      "official_website": 485,
+      "official_documentation": 30,
+      "source_repository": 23,
+      "announcement": 5,
+      "model_card": 1,
+      "community_source": 2
+    },
+    "insufficient_evidence_count": 2,
+    "insufficient_evidence_records": [
+      "alteryx-aidin",
+      "checkmarx-ai"
+    ]
+  },
+  "ai-models": {
+    "registry": "ai-models",
+    "total_records": 300,
+    "records_with_evidence": 300,
+    "records_with_zero_evidence": 0,
+    "records_with_primary_evidence": 300,
+    "coverage_percentage": 100.0,
+    "archetype_distribution": {
+      "official_documentation": 26,
+      "official_website": 96,
+      "model_card": 188,
+      "source_repository": 166,
+      "announcement": 85,
+      "research_paper": 55
+    },
+    "insufficient_evidence_count": 0,
+    "insufficient_evidence_records": []
+  },
+  "developer-resources": {
+    "registry": "developer-resources",
+    "total_records": 300,
+    "records_with_evidence": 300,
+    "records_with_zero_evidence": 0,
+    "records_with_primary_evidence": 300,
+    "coverage_percentage": 100.0,
+    "archetype_distribution": {
+      "official_website": 178,
+      "source_repository": 269,
+      "official_documentation": 99,
+      "model_card": 18,
+      "announcement": 4,
+      "package_registry": 2,
+      "research_paper": 8
+    },
+    "insufficient_evidence_count": 0,
+    "insufficient_evidence_records": []
+  }
+}

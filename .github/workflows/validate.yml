@@ -36,6 +36,11 @@ jobs:
         run: |
           python -m nexus_registry.cli validate
 
+      - name: Run Data Quality Suite & Integrity Gate
+        run: |
+          python -m nexus_registry.cli quality check
+          python -m nexus_registry.cli quality report
+
       - name: Verify Static API Artifacts & Drift Check
         run: |
           python scripts/generate_api.py

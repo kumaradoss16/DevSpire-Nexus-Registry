@@ -1,0 +1,2194 @@
+{
+  "ai-tools": {
+    "registry": "ai-tools",
+    "total_records": 403,
+    "completeness_percentage": 99.94,
+    "missing_critical": 0,
+    "missing_high": 0,
+    "missing_medium": 3,
+    "missing_low": 10,
+    "findings_count": 13,
+    "findings": [
+      {
+        "registry": "ai-tools",
+        "record_id": "phind",
+        "field_name": "icon",
+        "severity": "low",
+        "reason": "Resource visual icon is null."
+      },
+      {
+        "registry": "ai-tools",
+        "record_id": "tome",
+        "field_name": "icon",
+        "severity": "low",
+        "reason": "Resource visual icon is null."
+      },
+      {
+        "registry": "ai-tools",
+        "record_id": "play-ht",
+        "field_name": "icon",
+        "severity": "low",
+        "reason": "Resource visual icon is null."
+      },
+      {
+        "registry": "ai-tools",
+        "record_id": "haiper-ai",
+        "field_name": "icon",
+        "severity": "low",
+        "reason": "Resource visual icon is null."
+      },
+      {
+        "registry": "ai-tools",
+        "record_id": "heyday",
+        "field_name": "icon",
+        "severity": "low",
+        "reason": "Resource visual icon is null."
+      },
+      {
+        "registry": "ai-tools",
+        "record_id": "mutable-ai",
+        "field_name": "icon",
+        "severity": "low",
+        "reason": "Resource visual icon is null."
+      },
+      {
+        "registry": "ai-tools",
+        "record_id": "visual-electric",
+        "field_name": "icon",
+        "severity": "low",
+        "reason": "Resource visual icon is null."
+      },
+      {
+        "registry": "ai-tools",
+        "record_id": "bluedot",
+        "field_name": "icon",
+        "severity": "low",
+        "reason": "Resource visual icon is null."
+      },
+      {
+        "registry": "ai-tools",
+        "record_id": "pymetrics",
+        "field_name": "icon",
+        "severity": "low",
+        "reason": "Resource visual icon is null."
+      },
+      {
+        "registry": "ai-tools",
+        "record_id": "lacework",
+        "field_name": "icon",
+        "severity": "low",
+        "reason": "Resource visual icon is null."
+      },
+      {
+        "registry": "ai-tools",
+        "record_id": "gemini",
+        "field_name": "signup_required",
+        "severity": "medium",
+        "reason": "signup_required flag is unspecified (null)."
+      },
+      {
+        "registry": "ai-tools",
+        "record_id": "grok",
+        "field_name": "signup_required",
+        "severity": "medium",
+        "reason": "signup_required flag is unspecified (null)."
+      },
+      {
+        "registry": "ai-tools",
+        "record_id": "notebooklm",
+        "field_name": "signup_required",
+        "severity": "medium",
+        "reason": "signup_required flag is unspecified (null)."
+      }
+    ]
+  },
+  "ai-models": {
+    "registry": "ai-models",
+    "total_records": 300,
+    "completeness_percentage": 99.75,
+    "missing_critical": 0,
+    "missing_high": 0,
+    "missing_medium": 0,
+    "missing_low": 74,
+    "findings_count": 74,
+    "findings": [
+      {
+        "registry": "ai-models",
+        "record_id": "flux-1-schnell",
+        "field_name": "context_k",
+        "severity": "low",
+        "reason": "Quantitative context window token limit is unspecified."
+      },
+      {
+        "registry": "ai-models",
+        "record_id": "whisper",
+        "field_name": "context_k",
+        "severity": "low",
+        "reason": "Quantitative context window token limit is unspecified."
+      },
+      {
+        "registry": "ai-models",
+        "record_id": "stable-diffusion-3-5",
+        "field_name": "context_k",
+        "severity": "low",
+        "reason": "Quantitative context window token limit is unspecified."
+      },
+      {
+        "registry": "ai-models",
+        "record_id": "musicgen",
+        "field_name": "context_k",
+        "severity": "low",
+        "reason": "Quantitative context window token limit is unspecified."
+      },
+      {
+        "registry": "ai-models",
+        "record_id": "sam-2",
+        "field_name": "context_k",
+        "severity": "low",
+        "reason": "Quantitative context window token limit is unspecified."
+      },
+      {
+        "registry": "ai-models",
+        "record_id": "dinov2",
+        "field_name": "context_k",
+        "severity": "low",
+        "reason": "Quantitative context window token limit is unspecified."
+      },
+      {
+        "registry": "ai-models",
+        "record_id": "clip",
+        "field_name": "context_k",
+        "severity": "low",
+        "reason": "Quantitative context window token limit is unspecified."
+      },
+      {
+        "registry": "ai-models",
+        "record_id": "hunyuan-video",
+        "field_name": "context_k",
+        "severity": "low",
+        "reason": "Quantitative context window token limit is unspecified."
+      },
+      {
+        "registry": "ai-models",
+        "record_id": "cogvideox",
+        "field_name": "context_k",
+        "severity": "low",
+        "reason": "Quantitative context window token limit is unspecified."
+      },
+      {
+        "registry": "ai-models",
+        "record_id": "xtts-v2",
+        "field_name": "context_k",
+        "severity": "low",
+        "reason": "Quantitative context window token limit is unspecified."
+      },
+      {
+        "registry": "ai-models",
+        "record_id": "flux-1-dev",
+        "field_name": "context_k",
+        "severity": "low",
+        "reason": "Quantitative context window token limit is unspecified."
+      },
+      {
+        "registry": "ai-models",
+        "record_id": "sdxl",
+        "field_name": "context_k",
+        "severity": "low",
+        "reason": "Quantitative context window token limit is unspecified."
+      },
+      {
+        "registry": "ai-models",
+        "record_id": "kolors",
+        "field_name": "context_k",
+        "severity": "low",
+        "reason": "Quantitative context window token limit is unspecified."
+      },
+      {
+        "registry": "ai-models",
+        "record_id": "bark",
+        "field_name": "context_k",
+        "severity": "low",
+        "reason": "Quantitative context window token limit is unspecified."
+      },
+      {
+        "registry": "ai-models",
+        "record_id": "whisper-large-v3-turbo",
+        "field_name": "context_k",
+        "severity": "low",
+        "reason": "Quantitative context window token limit is unspecified."
+      },
+      {
+        "registry": "ai-models",
+        "record_id": "stable-audio-open",
+        "field_name": "context_k",
+        "severity": "low",
+        "reason": "Quantitative context window token limit is unspecified."
+      },
+      {
+        "registry": "ai-models",
+        "record_id": "stable-video-diffusion",
+        "field_name": "context_k",
+        "severity": "low",
+        "reason": "Quantitative context window token limit is unspecified."
+      },
+      {
+        "registry": "ai-models",
+        "record_id": "jukebox",
+        "field_name": "context_k",
+        "severity": "low",
+        "reason": "Quantitative context window token limit is unspecified."
+      },
+      {
+        "registry": "ai-models",
+        "record_id": "yolov8",
+        "field_name": "context_k",
+        "severity": "low",
+        "reason": "Quantitative context window token limit is unspecified."
+      },
+      {
+        "registry": "ai-models",
+        "record_id": "grounding-dino",
+        "field_name": "context_k",
+        "severity": "low",
+        "reason": "Quantitative context window token limit is unspecified."
+      },
+      {
+        "registry": "ai-models",
+        "record_id": "sam-1",
+        "field_name": "context_k",
+        "severity": "low",
+        "reason": "Quantitative context window token limit is unspecified."
+      },
+      {
+        "registry": "ai-models",
+        "record_id": "depth-anything-v2",
+        "field_name": "context_k",
+        "severity": "low",
+        "reason": "Quantitative context window token limit is unspecified."
+      },
+      {
+        "registry": "ai-models",
+        "record_id": "fastsam",
+        "field_name": "context_k",
+        "severity": "low",
+        "reason": "Quantitative context window token limit is unspecified."
+      },
+      {
+        "registry": "ai-models",
+        "record_id": "stable-diffusion-2-1",
+        "field_name": "context_k",
+        "severity": "low",
+        "reason": "Quantitative context window token limit is unspecified."
+      },
+      {
+        "registry": "ai-models",
+        "record_id": "controlnet",
+        "field_name": "context_k",
+        "severity": "low",
+        "reason": "Quantitative context window token limit is unspecified."
+      },
+      {
+        "registry": "ai-models",
+        "record_id": "animatediff",
+        "field_name": "context_k",
+        "severity": "low",
+        "reason": "Quantitative context window token limit is unspecified."
+      },
+      {
+        "registry": "ai-models",
+        "record_id": "triposr",
+        "field_name": "context_k",
+        "severity": "low",
+        "reason": "Quantitative context window token limit is unspecified."
+      },
+      {
+        "registry": "ai-models",
+        "record_id": "instantmesh",
+        "field_name": "context_k",
+        "severity": "low",
+        "reason": "Quantitative context window token limit is unspecified."
+      },
+      {
+        "registry": "ai-models",
+        "record_id": "whisperx",
+        "field_name": "context_k",
+        "severity": "low",
+        "reason": "Quantitative context window token limit is unspecified."
+      },
+      {
+        "registry": "ai-models",
+        "record_id": "alphafold-3",
+        "field_name": "context_k",
+        "severity": "low",
+        "reason": "Quantitative context window token limit is unspecified."
+      },
+      {
+        "registry": "ai-models",
+        "record_id": "seamlessm4t",
+        "field_name": "context_k",
+        "severity": "low",
+        "reason": "Quantitative context window token limit is unspecified."
+      },
+      {
+        "registry": "ai-models",
+        "record_id": "openvoice",
+        "field_name": "context_k",
+        "severity": "low",
+        "reason": "Quantitative context window token limit is unspecified."
+      },
+      {
+        "registry": "ai-models",
+        "record_id": "mms-meta",
+        "field_name": "context_k",
+        "severity": "low",
+        "reason": "Quantitative context window token limit is unspecified."
+      },
+      {
+        "registry": "ai-models",
+        "record_id": "segformer",
+        "field_name": "context_k",
+        "severity": "low",
+        "reason": "Quantitative context window token limit is unspecified."
+      },
+      {
+        "registry": "ai-models",
+        "record_id": "musiclm",
+        "field_name": "context_k",
+        "severity": "low",
+        "reason": "Quantitative context window token limit is unspecified."
+      },
+      {
+        "registry": "ai-models",
+        "record_id": "sd-turbo",
+        "field_name": "context_k",
+        "severity": "low",
+        "reason": "Quantitative context window token limit is unspecified."
+      },
+      {
+        "registry": "ai-models",
+        "record_id": "lcm",
+        "field_name": "context_k",
+        "severity": "low",
+        "reason": "Quantitative context window token limit is unspecified."
+      },
+      {
+        "registry": "ai-models",
+        "record_id": "distil-whisper",
+        "field_name": "context_k",
+        "severity": "low",
+        "reason": "Quantitative context window token limit is unspecified."
+      },
+      {
+        "registry": "ai-models",
+        "record_id": "instructpix2pix",
+        "field_name": "context_k",
+        "severity": "low",
+        "reason": "Quantitative context window token limit is unspecified."
+      },
+      {
+        "registry": "ai-models",
+        "record_id": "cogview3",
+        "field_name": "context_k",
+        "severity": "low",
+        "reason": "Quantitative context window token limit is unspecified."
+      },
+      {
+        "registry": "ai-models",
+        "record_id": "yolos",
+        "field_name": "context_k",
+        "severity": "low",
+        "reason": "Quantitative context window token limit is unspecified."
+      },
+      {
+        "registry": "ai-models",
+        "record_id": "cosyvoice",
+        "field_name": "context_k",
+        "severity": "low",
+        "reason": "Quantitative context window token limit is unspecified."
+      },
+      {
+        "registry": "ai-models",
+        "record_id": "hq-sam",
+        "field_name": "context_k",
+        "severity": "low",
+        "reason": "Quantitative context window token limit is unspecified."
+      },
+      {
+        "registry": "ai-models",
+        "record_id": "open-sora",
+        "field_name": "context_k",
+        "severity": "low",
+        "reason": "Quantitative context window token limit is unspecified."
+      },
+      {
+        "registry": "ai-models",
+        "record_id": "stable-cascade",
+        "field_name": "context_k",
+        "severity": "low",
+        "reason": "Quantitative context window token limit is unspecified."
+      },
+      {
+        "registry": "ai-models",
+        "record_id": "sv3d",
+        "field_name": "context_k",
+        "severity": "low",
+        "reason": "Quantitative context window token limit is unspecified."
+      },
+      {
+        "registry": "ai-models",
+        "record_id": "point-e",
+        "field_name": "context_k",
+        "severity": "low",
+        "reason": "Quantitative context window token limit is unspecified."
+      },
+      {
+        "registry": "ai-models",
+        "record_id": "shap-e",
+        "field_name": "context_k",
+        "severity": "low",
+        "reason": "Quantitative context window token limit is unspecified."
+      },
+      {
+        "registry": "ai-models",
+        "record_id": "conformer-ctc",
+        "field_name": "context_k",
+        "severity": "low",
+        "reason": "Quantitative context window token limit is unspecified."
+      },
+      {
+        "registry": "ai-models",
+        "record_id": "animatediff-lightning",
+        "field_name": "context_k",
+        "severity": "low",
+        "reason": "Quantitative context window token limit is unspecified."
+      },
+      {
+        "registry": "ai-models",
+        "record_id": "stable-audio-2",
+        "field_name": "context_k",
+        "severity": "low",
+        "reason": "Quantitative context window token limit is unspecified."
+      },
+      {
+        "registry": "ai-models",
+        "record_id": "audioldm-2",
+        "field_name": "context_k",
+        "severity": "low",
+        "reason": "Quantitative context window token limit is unspecified."
+      },
+      {
+        "registry": "ai-models",
+        "record_id": "musicgen-melody",
+        "field_name": "context_k",
+        "severity": "low",
+        "reason": "Quantitative context window token limit is unspecified."
+      },
+      {
+        "registry": "ai-models",
+        "record_id": "whisper-large-v2",
+        "field_name": "context_k",
+        "severity": "low",
+        "reason": "Quantitative context window token limit is unspecified."
+      },
+      {
+        "registry": "ai-models",
+        "record_id": "crm-3d",
+        "field_name": "context_k",
+        "severity": "low",
+        "reason": "Quantitative context window token limit is unspecified."
+      },
+      {
+        "registry": "ai-models",
+        "record_id": "openshape",
+        "field_name": "context_k",
+        "severity": "low",
+        "reason": "Quantitative context window token limit is unspecified."
+      },
+      {
+        "registry": "ai-models",
+        "record_id": "rt-2",
+        "field_name": "context_k",
+        "severity": "low",
+        "reason": "Quantitative context window token limit is unspecified."
+      },
+      {
+        "registry": "ai-models",
+        "record_id": "whisper-tiny",
+        "field_name": "context_k",
+        "severity": "low",
+        "reason": "Quantitative context window token limit is unspecified."
+      },
+      {
+        "registry": "ai-models",
+        "record_id": "chattts",
+        "field_name": "context_k",
+        "severity": "low",
+        "reason": "Quantitative context window token limit is unspecified."
+      },
+      {
+        "registry": "ai-models",
+        "record_id": "f5-tts",
+        "field_name": "context_k",
+        "severity": "low",
+        "reason": "Quantitative context window token limit is unspecified."
+      },
+      {
+        "registry": "ai-models",
+        "record_id": "stable-diffusion-1-5",
+        "field_name": "context_k",
+        "severity": "low",
+        "reason": "Quantitative context window token limit is unspecified."
+      },
+      {
+        "registry": "ai-models",
+        "record_id": "pixart-alpha",
+        "field_name": "context_k",
+        "severity": "low",
+        "reason": "Quantitative context window token limit is unspecified."
+      },
+      {
+        "registry": "ai-models",
+        "record_id": "pixart-sigma",
+        "field_name": "context_k",
+        "severity": "low",
+        "reason": "Quantitative context window token limit is unspecified."
+      },
+      {
+        "registry": "ai-models",
+        "record_id": "zero123",
+        "field_name": "context_k",
+        "severity": "low",
+        "reason": "Quantitative context window token limit is unspecified."
+      },
+      {
+        "registry": "ai-models",
+        "record_id": "flux-1-pro",
+        "field_name": "context_k",
+        "severity": "low",
+        "reason": "Quantitative context window token limit is unspecified."
+      },
+      {
+        "registry": "ai-models",
+        "record_id": "nomic-embed-vision",
+        "field_name": "context_k",
+        "severity": "low",
+        "reason": "Quantitative context window token limit is unspecified."
+      },
+      {
+        "registry": "ai-models",
+        "record_id": "lgm-3d",
+        "field_name": "context_k",
+        "severity": "low",
+        "reason": "Quantitative context window token limit is unspecified."
+      },
+      {
+        "registry": "ai-models",
+        "record_id": "sdxl-turbo",
+        "field_name": "context_k",
+        "severity": "low",
+        "reason": "Quantitative context window token limit is unspecified."
+      },
+      {
+        "registry": "ai-models",
+        "record_id": "open-sora-plan",
+        "field_name": "context_k",
+        "severity": "low",
+        "reason": "Quantitative context window token limit is unspecified."
+      },
+      {
+        "registry": "ai-models",
+        "record_id": "cogvideox-5b",
+        "field_name": "context_k",
+        "severity": "low",
+        "reason": "Quantitative context window token limit is unspecified."
+      },
+      {
+        "registry": "ai-models",
+        "record_id": "octo",
+        "field_name": "context_k",
+        "severity": "low",
+        "reason": "Quantitative context window token limit is unspecified."
+      },
+      {
+        "registry": "ai-models",
+        "record_id": "openx-embodiment",
+        "field_name": "context_k",
+        "severity": "low",
+        "reason": "Quantitative context window token limit is unspecified."
+      },
+      {
+        "registry": "ai-models",
+        "record_id": "act-robotics",
+        "field_name": "context_k",
+        "severity": "low",
+        "reason": "Quantitative context window token limit is unspecified."
+      },
+      {
+        "registry": "ai-models",
+        "record_id": "diffusion-policy",
+        "field_name": "context_k",
+        "severity": "low",
+        "reason": "Quantitative context window token limit is unspecified."
+      }
+    ]
+  },
+  "developer-resources": {
+    "registry": "developer-resources",
+    "total_records": 300,
+    "completeness_percentage": 85.52,
+    "missing_critical": 0,
+    "missing_high": 216,
+    "missing_medium": 5,
+    "missing_low": 0,
+    "findings_count": 221,
+    "findings": [
+      {
+        "registry": "developer-resources",
+        "record_id": "n8n",
+        "field_name": "repository_url",
+        "severity": "medium",
+        "reason": "Open-source resource lacks top-level repository_url."
+      },
+      {
+        "registry": "developer-resources",
+        "record_id": "tgi",
+        "field_name": "license",
+        "severity": "high",
+        "reason": "Resource marked open_source=true but license is null."
+      },
+      {
+        "registry": "developer-resources",
+        "record_id": "triton-inference-server",
+        "field_name": "license",
+        "severity": "high",
+        "reason": "Resource marked open_source=true but license is null."
+      },
+      {
+        "registry": "developer-resources",
+        "record_id": "kserve",
+        "field_name": "license",
+        "severity": "high",
+        "reason": "Resource marked open_source=true but license is null."
+      },
+      {
+        "registry": "developer-resources",
+        "record_id": "bentoml",
+        "field_name": "license",
+        "severity": "high",
+        "reason": "Resource marked open_source=true but license is null."
+      },
+      {
+        "registry": "developer-resources",
+        "record_id": "ray-serve",
+        "field_name": "license",
+        "severity": "high",
+        "reason": "Resource marked open_source=true but license is null."
+      },
+      {
+        "registry": "developer-resources",
+        "record_id": "mlflow",
+        "field_name": "license",
+        "severity": "high",
+        "reason": "Resource marked open_source=true but license is null."
+      },
+      {
+        "registry": "developer-resources",
+        "record_id": "opentelemetry-genai",
+        "field_name": "license",
+        "severity": "high",
+        "reason": "Resource marked open_source=true but license is null."
+      },
+      {
+        "registry": "developer-resources",
+        "record_id": "evidently-ai",
+        "field_name": "license",
+        "severity": "high",
+        "reason": "Resource marked open_source=true but license is null."
+      },
+      {
+        "registry": "developer-resources",
+        "record_id": "giskard",
+        "field_name": "license",
+        "severity": "high",
+        "reason": "Resource marked open_source=true but license is null."
+      },
+      {
+        "registry": "developer-resources",
+        "record_id": "openllmetry",
+        "field_name": "license",
+        "severity": "high",
+        "reason": "Resource marked open_source=true but license is null."
+      },
+      {
+        "registry": "developer-resources",
+        "record_id": "trulens",
+        "field_name": "license",
+        "severity": "high",
+        "reason": "Resource marked open_source=true but license is null."
+      },
+      {
+        "registry": "developer-resources",
+        "record_id": "helicone",
+        "field_name": "license",
+        "severity": "high",
+        "reason": "Resource marked open_source=true but license is null."
+      },
+      {
+        "registry": "developer-resources",
+        "record_id": "portkey",
+        "field_name": "license",
+        "severity": "high",
+        "reason": "Resource marked open_source=true but license is null."
+      },
+      {
+        "registry": "developer-resources",
+        "record_id": "promptfoo",
+        "field_name": "license",
+        "severity": "high",
+        "reason": "Resource marked open_source=true but license is null."
+      },
+      {
+        "registry": "developer-resources",
+        "record_id": "mem0",
+        "field_name": "license",
+        "severity": "high",
+        "reason": "Resource marked open_source=true but license is null."
+      },
+      {
+        "registry": "developer-resources",
+        "record_id": "letta",
+        "field_name": "license",
+        "severity": "high",
+        "reason": "Resource marked open_source=true but license is null."
+      },
+      {
+        "registry": "developer-resources",
+        "record_id": "semantic-kernel",
+        "field_name": "license",
+        "severity": "high",
+        "reason": "Resource marked open_source=true but license is null."
+      },
+      {
+        "registry": "developer-resources",
+        "record_id": "pydantic-ai",
+        "field_name": "license",
+        "severity": "high",
+        "reason": "Resource marked open_source=true but license is null."
+      },
+      {
+        "registry": "developer-resources",
+        "record_id": "agno",
+        "field_name": "license",
+        "severity": "high",
+        "reason": "Resource marked open_source=true but license is null."
+      },
+      {
+        "registry": "developer-resources",
+        "record_id": "fastchat",
+        "field_name": "license",
+        "severity": "high",
+        "reason": "Resource marked open_source=true but license is null."
+      },
+      {
+        "registry": "developer-resources",
+        "record_id": "aphrodite-engine",
+        "field_name": "license",
+        "severity": "high",
+        "reason": "Resource marked open_source=true but license is null."
+      },
+      {
+        "registry": "developer-resources",
+        "record_id": "exllamav2",
+        "field_name": "license",
+        "severity": "high",
+        "reason": "Resource marked open_source=true but license is null."
+      },
+      {
+        "registry": "developer-resources",
+        "record_id": "autogpt",
+        "field_name": "license",
+        "severity": "high",
+        "reason": "Resource marked open_source=true but license is null."
+      },
+      {
+        "registry": "developer-resources",
+        "record_id": "babyagi",
+        "field_name": "license",
+        "severity": "high",
+        "reason": "Resource marked open_source=true but license is null."
+      },
+      {
+        "registry": "developer-resources",
+        "record_id": "instructor",
+        "field_name": "license",
+        "severity": "high",
+        "reason": "Resource marked open_source=true but license is null."
+      },
+      {
+        "registry": "developer-resources",
+        "record_id": "vespa",
+        "field_name": "license",
+        "severity": "high",
+        "reason": "Resource marked open_source=true but license is null."
+      },
+      {
+        "registry": "developer-resources",
+        "record_id": "opensearch-neural",
+        "field_name": "license",
+        "severity": "high",
+        "reason": "Resource marked open_source=true but license is null."
+      },
+      {
+        "registry": "developer-resources",
+        "record_id": "scann",
+        "field_name": "license",
+        "severity": "high",
+        "reason": "Resource marked open_source=true but license is null."
+      },
+      {
+        "registry": "developer-resources",
+        "record_id": "deepspeed",
+        "field_name": "license",
+        "severity": "high",
+        "reason": "Resource marked open_source=true but license is null."
+      },
+      {
+        "registry": "developer-resources",
+        "record_id": "megatron-lm",
+        "field_name": "license",
+        "severity": "high",
+        "reason": "Resource marked open_source=true but license is null."
+      },
+      {
+        "registry": "developer-resources",
+        "record_id": "torchtune",
+        "field_name": "license",
+        "severity": "high",
+        "reason": "Resource marked open_source=true but license is null."
+      },
+      {
+        "registry": "developer-resources",
+        "record_id": "trl",
+        "field_name": "license",
+        "severity": "high",
+        "reason": "Resource marked open_source=true but license is null."
+      },
+      {
+        "registry": "developer-resources",
+        "record_id": "distilabel",
+        "field_name": "license",
+        "severity": "high",
+        "reason": "Resource marked open_source=true but license is null."
+      },
+      {
+        "registry": "developer-resources",
+        "record_id": "cleanlab",
+        "field_name": "license",
+        "severity": "high",
+        "reason": "Resource marked open_source=true but license is null."
+      },
+      {
+        "registry": "developer-resources",
+        "record_id": "outlines",
+        "field_name": "license",
+        "severity": "high",
+        "reason": "Resource marked open_source=true but license is null."
+      },
+      {
+        "registry": "developer-resources",
+        "record_id": "guidance",
+        "field_name": "license",
+        "severity": "high",
+        "reason": "Resource marked open_source=true but license is null."
+      },
+      {
+        "registry": "developer-resources",
+        "record_id": "llamaindex-workflows",
+        "field_name": "license",
+        "severity": "high",
+        "reason": "Resource marked open_source=true but license is null."
+      },
+      {
+        "registry": "developer-resources",
+        "record_id": "langserve",
+        "field_name": "license",
+        "severity": "high",
+        "reason": "Resource marked open_source=true but license is null."
+      },
+      {
+        "registry": "developer-resources",
+        "record_id": "lmcache",
+        "field_name": "license",
+        "severity": "high",
+        "reason": "Resource marked open_source=true but license is null."
+      },
+      {
+        "registry": "developer-resources",
+        "record_id": "lunary",
+        "field_name": "license",
+        "severity": "high",
+        "reason": "Resource marked open_source=true but license is null."
+      },
+      {
+        "registry": "developer-resources",
+        "record_id": "openlit",
+        "field_name": "license",
+        "severity": "high",
+        "reason": "Resource marked open_source=true but license is null."
+      },
+      {
+        "registry": "developer-resources",
+        "record_id": "superagi",
+        "field_name": "license",
+        "severity": "high",
+        "reason": "Resource marked open_source=true but license is null."
+      },
+      {
+        "registry": "developer-resources",
+        "record_id": "autogen-studio",
+        "field_name": "license",
+        "severity": "high",
+        "reason": "Resource marked open_source=true but license is null."
+      },
+      {
+        "registry": "developer-resources",
+        "record_id": "mirascope",
+        "field_name": "license",
+        "severity": "high",
+        "reason": "Resource marked open_source=true but license is null."
+      },
+      {
+        "registry": "developer-resources",
+        "record_id": "fastmcp",
+        "field_name": "license",
+        "severity": "high",
+        "reason": "Resource marked open_source=true but license is null."
+      },
+      {
+        "registry": "developer-resources",
+        "record_id": "pymupdf4llm",
+        "field_name": "license",
+        "severity": "high",
+        "reason": "Resource marked open_source=true but license is null."
+      },
+      {
+        "registry": "developer-resources",
+        "record_id": "pymupdf4llm",
+        "field_name": "repository_url",
+        "severity": "medium",
+        "reason": "Open-source resource lacks top-level repository_url."
+      },
+      {
+        "registry": "developer-resources",
+        "record_id": "marker",
+        "field_name": "license",
+        "severity": "high",
+        "reason": "Resource marked open_source=true but license is null."
+      },
+      {
+        "registry": "developer-resources",
+        "record_id": "unstructured",
+        "field_name": "license",
+        "severity": "high",
+        "reason": "Resource marked open_source=true but license is null."
+      },
+      {
+        "registry": "developer-resources",
+        "record_id": "chonkie",
+        "field_name": "license",
+        "severity": "high",
+        "reason": "Resource marked open_source=true but license is null."
+      },
+      {
+        "registry": "developer-resources",
+        "record_id": "flashattention",
+        "field_name": "license",
+        "severity": "high",
+        "reason": "Resource marked open_source=true but license is null."
+      },
+      {
+        "registry": "developer-resources",
+        "record_id": "bitsandbytes",
+        "field_name": "license",
+        "severity": "high",
+        "reason": "Resource marked open_source=true but license is null."
+      },
+      {
+        "registry": "developer-resources",
+        "record_id": "autogptq",
+        "field_name": "license",
+        "severity": "high",
+        "reason": "Resource marked open_source=true but license is null."
+      },
+      {
+        "registry": "developer-resources",
+        "record_id": "onnx-runtime",
+        "field_name": "license",
+        "severity": "high",
+        "reason": "Resource marked open_source=true but license is null."
+      },
+      {
+        "registry": "developer-resources",
+        "record_id": "openvino",
+        "field_name": "license",
+        "severity": "high",
+        "reason": "Resource marked open_source=true but license is null."
+      },
+      {
+        "registry": "developer-resources",
+        "record_id": "ggml",
+        "field_name": "license",
+        "severity": "high",
+        "reason": "Resource marked open_source=true but license is null."
+      },
+      {
+        "registry": "developer-resources",
+        "record_id": "gpt4all",
+        "field_name": "license",
+        "severity": "high",
+        "reason": "Resource marked open_source=true but license is null."
+      },
+      {
+        "registry": "developer-resources",
+        "record_id": "tei",
+        "field_name": "license",
+        "severity": "high",
+        "reason": "Resource marked open_source=true but license is null."
+      },
+      {
+        "registry": "developer-resources",
+        "record_id": "deepsparse",
+        "field_name": "license",
+        "severity": "high",
+        "reason": "Resource marked open_source=true but license is null."
+      },
+      {
+        "registry": "developer-resources",
+        "record_id": "mlc-llm",
+        "field_name": "license",
+        "severity": "high",
+        "reason": "Resource marked open_source=true but license is null."
+      },
+      {
+        "registry": "developer-resources",
+        "record_id": "chatdev",
+        "field_name": "license",
+        "severity": "high",
+        "reason": "Resource marked open_source=true but license is null."
+      },
+      {
+        "registry": "developer-resources",
+        "record_id": "metagpt",
+        "field_name": "license",
+        "severity": "high",
+        "reason": "Resource marked open_source=true but license is null."
+      },
+      {
+        "registry": "developer-resources",
+        "record_id": "camel-ai",
+        "field_name": "license",
+        "severity": "high",
+        "reason": "Resource marked open_source=true but license is null."
+      },
+      {
+        "registry": "developer-resources",
+        "record_id": "swe-bench",
+        "field_name": "license",
+        "severity": "high",
+        "reason": "Resource marked open_source=true but license is null."
+      },
+      {
+        "registry": "developer-resources",
+        "record_id": "helm-stanford",
+        "field_name": "license",
+        "severity": "high",
+        "reason": "Resource marked open_source=true but license is null."
+      },
+      {
+        "registry": "developer-resources",
+        "record_id": "agent-protocol",
+        "field_name": "license",
+        "severity": "high",
+        "reason": "Resource marked open_source=true but license is null."
+      },
+      {
+        "registry": "developer-resources",
+        "record_id": "mcp-spec",
+        "field_name": "license",
+        "severity": "high",
+        "reason": "Resource marked open_source=true but license is null."
+      },
+      {
+        "registry": "developer-resources",
+        "record_id": "autoawq",
+        "field_name": "license",
+        "severity": "high",
+        "reason": "Resource marked open_source=true but license is null."
+      },
+      {
+        "registry": "developer-resources",
+        "record_id": "gptqmodel",
+        "field_name": "license",
+        "severity": "high",
+        "reason": "Resource marked open_source=true but license is null."
+      },
+      {
+        "registry": "developer-resources",
+        "record_id": "llamafile",
+        "field_name": "license",
+        "severity": "high",
+        "reason": "Resource marked open_source=true but license is null."
+      },
+      {
+        "registry": "developer-resources",
+        "record_id": "tabbyapi",
+        "field_name": "license",
+        "severity": "high",
+        "reason": "Resource marked open_source=true but license is null."
+      },
+      {
+        "registry": "developer-resources",
+        "record_id": "ktransformers",
+        "field_name": "license",
+        "severity": "high",
+        "reason": "Resource marked open_source=true but license is null."
+      },
+      {
+        "registry": "developer-resources",
+        "record_id": "deepchecks",
+        "field_name": "license",
+        "severity": "high",
+        "reason": "Resource marked open_source=true but license is null."
+      },
+      {
+        "registry": "developer-resources",
+        "record_id": "uptrain",
+        "field_name": "license",
+        "severity": "high",
+        "reason": "Resource marked open_source=true but license is null."
+      },
+      {
+        "registry": "developer-resources",
+        "record_id": "rebuff",
+        "field_name": "license",
+        "severity": "high",
+        "reason": "Resource marked open_source=true but license is null."
+      },
+      {
+        "registry": "developer-resources",
+        "record_id": "textgrad",
+        "field_name": "license",
+        "severity": "high",
+        "reason": "Resource marked open_source=true but license is null."
+      },
+      {
+        "registry": "developer-resources",
+        "record_id": "docling",
+        "field_name": "license",
+        "severity": "high",
+        "reason": "Resource marked open_source=true but license is null."
+      },
+      {
+        "registry": "developer-resources",
+        "record_id": "semantic-router",
+        "field_name": "license",
+        "severity": "high",
+        "reason": "Resource marked open_source=true but license is null."
+      },
+      {
+        "registry": "developer-resources",
+        "record_id": "routellm",
+        "field_name": "license",
+        "severity": "high",
+        "reason": "Resource marked open_source=true but license is null."
+      },
+      {
+        "registry": "developer-resources",
+        "record_id": "open-webui",
+        "field_name": "license",
+        "severity": "high",
+        "reason": "Resource marked open_source=true but license is null."
+      },
+      {
+        "registry": "developer-resources",
+        "record_id": "lorax",
+        "field_name": "license",
+        "severity": "high",
+        "reason": "Resource marked open_source=true but license is null."
+      },
+      {
+        "registry": "developer-resources",
+        "record_id": "optimum",
+        "field_name": "license",
+        "severity": "high",
+        "reason": "Resource marked open_source=true but license is null."
+      },
+      {
+        "registry": "developer-resources",
+        "record_id": "ipex",
+        "field_name": "license",
+        "severity": "high",
+        "reason": "Resource marked open_source=true but license is null."
+      },
+      {
+        "registry": "developer-resources",
+        "record_id": "coremltools",
+        "field_name": "license",
+        "severity": "high",
+        "reason": "Resource marked open_source=true but license is null."
+      },
+      {
+        "registry": "developer-resources",
+        "record_id": "marlin",
+        "field_name": "license",
+        "severity": "high",
+        "reason": "Resource marked open_source=true but license is null."
+      },
+      {
+        "registry": "developer-resources",
+        "record_id": "flash-decoding",
+        "field_name": "license",
+        "severity": "high",
+        "reason": "Resource marked open_source=true but license is null."
+      },
+      {
+        "registry": "developer-resources",
+        "record_id": "modelscan",
+        "field_name": "license",
+        "severity": "high",
+        "reason": "Resource marked open_source=true but license is null."
+      },
+      {
+        "registry": "developer-resources",
+        "record_id": "langchain-core",
+        "field_name": "license",
+        "severity": "high",
+        "reason": "Resource marked open_source=true but license is null."
+      },
+      {
+        "registry": "developer-resources",
+        "record_id": "llamaindex-core",
+        "field_name": "license",
+        "severity": "high",
+        "reason": "Resource marked open_source=true but license is null."
+      },
+      {
+        "registry": "developer-resources",
+        "record_id": "autogen-agentchat",
+        "field_name": "license",
+        "severity": "high",
+        "reason": "Resource marked open_source=true but license is null."
+      },
+      {
+        "registry": "developer-resources",
+        "record_id": "copilotkit",
+        "field_name": "license",
+        "severity": "high",
+        "reason": "Resource marked open_source=true but license is null."
+      },
+      {
+        "registry": "developer-resources",
+        "record_id": "ag2",
+        "field_name": "license",
+        "severity": "high",
+        "reason": "Resource marked open_source=true but license is null."
+      },
+      {
+        "registry": "developer-resources",
+        "record_id": "mcp-python-sdk",
+        "field_name": "license",
+        "severity": "high",
+        "reason": "Resource marked open_source=true but license is null."
+      },
+      {
+        "registry": "developer-resources",
+        "record_id": "label-studio",
+        "field_name": "license",
+        "severity": "high",
+        "reason": "Resource marked open_source=true but license is null."
+      },
+      {
+        "registry": "developer-resources",
+        "record_id": "cvat",
+        "field_name": "license",
+        "severity": "high",
+        "reason": "Resource marked open_source=true but license is null."
+      },
+      {
+        "registry": "developer-resources",
+        "record_id": "argilla",
+        "field_name": "license",
+        "severity": "high",
+        "reason": "Resource marked open_source=true but license is null."
+      },
+      {
+        "registry": "developer-resources",
+        "record_id": "arthur-bench",
+        "field_name": "license",
+        "severity": "high",
+        "reason": "Resource marked open_source=true but license is null."
+      },
+      {
+        "registry": "developer-resources",
+        "record_id": "chainforge",
+        "field_name": "license",
+        "severity": "high",
+        "reason": "Resource marked open_source=true but license is null."
+      },
+      {
+        "registry": "developer-resources",
+        "record_id": "llama-factory",
+        "field_name": "license",
+        "severity": "high",
+        "reason": "Resource marked open_source=true but license is null."
+      },
+      {
+        "registry": "developer-resources",
+        "record_id": "ms-swift",
+        "field_name": "license",
+        "severity": "high",
+        "reason": "Resource marked open_source=true but license is null."
+      },
+      {
+        "registry": "developer-resources",
+        "record_id": "peft",
+        "field_name": "license",
+        "severity": "high",
+        "reason": "Resource marked open_source=true but license is null."
+      },
+      {
+        "registry": "developer-resources",
+        "record_id": "accelerate",
+        "field_name": "license",
+        "severity": "high",
+        "reason": "Resource marked open_source=true but license is null."
+      },
+      {
+        "registry": "developer-resources",
+        "record_id": "pytorch-fsdp",
+        "field_name": "license",
+        "severity": "high",
+        "reason": "Resource marked open_source=true but license is null."
+      },
+      {
+        "registry": "developer-resources",
+        "record_id": "colossal-ai",
+        "field_name": "license",
+        "severity": "high",
+        "reason": "Resource marked open_source=true but license is null."
+      },
+      {
+        "registry": "developer-resources",
+        "record_id": "langtrace",
+        "field_name": "license",
+        "severity": "high",
+        "reason": "Resource marked open_source=true but license is null."
+      },
+      {
+        "registry": "developer-resources",
+        "record_id": "marqo",
+        "field_name": "license",
+        "severity": "high",
+        "reason": "Resource marked open_source=true but license is null."
+      },
+      {
+        "registry": "developer-resources",
+        "record_id": "ragatouille",
+        "field_name": "license",
+        "severity": "high",
+        "reason": "Resource marked open_source=true but license is null."
+      },
+      {
+        "registry": "developer-resources",
+        "record_id": "colbert",
+        "field_name": "license",
+        "severity": "high",
+        "reason": "Resource marked open_source=true but license is null."
+      },
+      {
+        "registry": "developer-resources",
+        "record_id": "fastembed",
+        "field_name": "license",
+        "severity": "high",
+        "reason": "Resource marked open_source=true but license is null."
+      },
+      {
+        "registry": "developer-resources",
+        "record_id": "xgrammar",
+        "field_name": "license",
+        "severity": "high",
+        "reason": "Resource marked open_source=true but license is null."
+      },
+      {
+        "registry": "developer-resources",
+        "record_id": "typechat",
+        "field_name": "license",
+        "severity": "high",
+        "reason": "Resource marked open_source=true but license is null."
+      },
+      {
+        "registry": "developer-resources",
+        "record_id": "marvin",
+        "field_name": "license",
+        "severity": "high",
+        "reason": "Resource marked open_source=true but license is null."
+      },
+      {
+        "registry": "developer-resources",
+        "record_id": "ell",
+        "field_name": "license",
+        "severity": "high",
+        "reason": "Resource marked open_source=true but license is null."
+      },
+      {
+        "registry": "developer-resources",
+        "record_id": "smolagents",
+        "field_name": "license",
+        "severity": "high",
+        "reason": "Resource marked open_source=true but license is null."
+      },
+      {
+        "registry": "developer-resources",
+        "record_id": "swarm",
+        "field_name": "license",
+        "severity": "high",
+        "reason": "Resource marked open_source=true but license is null."
+      },
+      {
+        "registry": "developer-resources",
+        "record_id": "kong-ai-gateway",
+        "field_name": "license",
+        "severity": "high",
+        "reason": "Resource marked open_source=true but license is null."
+      },
+      {
+        "registry": "developer-resources",
+        "record_id": "skypilot",
+        "field_name": "license",
+        "severity": "high",
+        "reason": "Resource marked open_source=true but license is null."
+      },
+      {
+        "registry": "developer-resources",
+        "record_id": "lmformatenforcer",
+        "field_name": "license",
+        "severity": "high",
+        "reason": "Resource marked open_source=true but license is null."
+      },
+      {
+        "registry": "developer-resources",
+        "record_id": "openllm",
+        "field_name": "license",
+        "severity": "high",
+        "reason": "Resource marked open_source=true but license is null."
+      },
+      {
+        "registry": "developer-resources",
+        "record_id": "deepspeed-mii",
+        "field_name": "license",
+        "severity": "high",
+        "reason": "Resource marked open_source=true but license is null."
+      },
+      {
+        "registry": "developer-resources",
+        "record_id": "torchao",
+        "field_name": "license",
+        "severity": "high",
+        "reason": "Resource marked open_source=true but license is null."
+      },
+      {
+        "registry": "developer-resources",
+        "record_id": "mcp-inspector",
+        "field_name": "license",
+        "severity": "high",
+        "reason": "Resource marked open_source=true but license is null."
+      },
+      {
+        "registry": "developer-resources",
+        "record_id": "torch-compile",
+        "field_name": "license",
+        "severity": "high",
+        "reason": "Resource marked open_source=true but license is null."
+      },
+      {
+        "registry": "developer-resources",
+        "record_id": "torch-compile",
+        "field_name": "repository_url",
+        "severity": "medium",
+        "reason": "Open-source resource lacks top-level repository_url."
+      },
+      {
+        "registry": "developer-resources",
+        "record_id": "flashattention-2",
+        "field_name": "license",
+        "severity": "high",
+        "reason": "Resource marked open_source=true but license is null."
+      },
+      {
+        "registry": "developer-resources",
+        "record_id": "tensorrt-llm-triton",
+        "field_name": "license",
+        "severity": "high",
+        "reason": "Resource marked open_source=true but license is null."
+      },
+      {
+        "registry": "developer-resources",
+        "record_id": "instructor-js",
+        "field_name": "license",
+        "severity": "high",
+        "reason": "Resource marked open_source=true but license is null."
+      },
+      {
+        "registry": "developer-resources",
+        "record_id": "outlines-core",
+        "field_name": "license",
+        "severity": "high",
+        "reason": "Resource marked open_source=true but license is null."
+      },
+      {
+        "registry": "developer-resources",
+        "record_id": "litellm-proxy",
+        "field_name": "license",
+        "severity": "high",
+        "reason": "Resource marked open_source=true but license is null."
+      },
+      {
+        "registry": "developer-resources",
+        "record_id": "portkey-gateway",
+        "field_name": "license",
+        "severity": "high",
+        "reason": "Resource marked open_source=true but license is null."
+      },
+      {
+        "registry": "developer-resources",
+        "record_id": "torchchat",
+        "field_name": "license",
+        "severity": "high",
+        "reason": "Resource marked open_source=true but license is null."
+      },
+      {
+        "registry": "developer-resources",
+        "record_id": "executorch",
+        "field_name": "license",
+        "severity": "high",
+        "reason": "Resource marked open_source=true but license is null."
+      },
+      {
+        "registry": "developer-resources",
+        "record_id": "onnx",
+        "field_name": "license",
+        "severity": "high",
+        "reason": "Resource marked open_source=true but license is null."
+      },
+      {
+        "registry": "developer-resources",
+        "record_id": "tensorrt-model-optimizer",
+        "field_name": "license",
+        "severity": "high",
+        "reason": "Resource marked open_source=true but license is null."
+      },
+      {
+        "registry": "developer-resources",
+        "record_id": "autotrain-advanced",
+        "field_name": "license",
+        "severity": "high",
+        "reason": "Resource marked open_source=true but license is null."
+      },
+      {
+        "registry": "developer-resources",
+        "record_id": "torchtitan",
+        "field_name": "license",
+        "severity": "high",
+        "reason": "Resource marked open_source=true but license is null."
+      },
+      {
+        "registry": "developer-resources",
+        "record_id": "mcp-typescript-sdk",
+        "field_name": "license",
+        "severity": "high",
+        "reason": "Resource marked open_source=true but license is null."
+      },
+      {
+        "registry": "developer-resources",
+        "record_id": "mcp-kotlin-sdk",
+        "field_name": "license",
+        "severity": "high",
+        "reason": "Resource marked open_source=true but license is null."
+      },
+      {
+        "registry": "developer-resources",
+        "record_id": "evals-openai",
+        "field_name": "license",
+        "severity": "high",
+        "reason": "Resource marked open_source=true but license is null."
+      },
+      {
+        "registry": "developer-resources",
+        "record_id": "vllm-ascend",
+        "field_name": "license",
+        "severity": "high",
+        "reason": "Resource marked open_source=true but license is null."
+      },
+      {
+        "registry": "developer-resources",
+        "record_id": "mcp-csharp-sdk",
+        "field_name": "license",
+        "severity": "high",
+        "reason": "Resource marked open_source=true but license is null."
+      },
+      {
+        "registry": "developer-resources",
+        "record_id": "mcp-rust-sdk",
+        "field_name": "license",
+        "severity": "high",
+        "reason": "Resource marked open_source=true but license is null."
+      },
+      {
+        "registry": "developer-resources",
+        "record_id": "langchain-community",
+        "field_name": "license",
+        "severity": "high",
+        "reason": "Resource marked open_source=true but license is null."
+      },
+      {
+        "registry": "developer-resources",
+        "record_id": "crewai-tools",
+        "field_name": "license",
+        "severity": "high",
+        "reason": "Resource marked open_source=true but license is null."
+      },
+      {
+        "registry": "developer-resources",
+        "record_id": "ollama-python",
+        "field_name": "license",
+        "severity": "high",
+        "reason": "Resource marked open_source=true but license is null."
+      },
+      {
+        "registry": "developer-resources",
+        "record_id": "ollama-js",
+        "field_name": "license",
+        "severity": "high",
+        "reason": "Resource marked open_source=true but license is null."
+      },
+      {
+        "registry": "developer-resources",
+        "record_id": "cutlass",
+        "field_name": "license",
+        "severity": "high",
+        "reason": "Resource marked open_source=true but license is null."
+      },
+      {
+        "registry": "developer-resources",
+        "record_id": "fastertransformer",
+        "field_name": "license",
+        "severity": "high",
+        "reason": "Resource marked open_source=true but license is null."
+      },
+      {
+        "registry": "developer-resources",
+        "record_id": "triton-client",
+        "field_name": "license",
+        "severity": "high",
+        "reason": "Resource marked open_source=true but license is null."
+      },
+      {
+        "registry": "developer-resources",
+        "record_id": "sglang-srt",
+        "field_name": "license",
+        "severity": "high",
+        "reason": "Resource marked open_source=true but license is null."
+      },
+      {
+        "registry": "developer-resources",
+        "record_id": "lightllm",
+        "field_name": "license",
+        "severity": "high",
+        "reason": "Resource marked open_source=true but license is null."
+      },
+      {
+        "registry": "developer-resources",
+        "record_id": "turbomind",
+        "field_name": "license",
+        "severity": "high",
+        "reason": "Resource marked open_source=true but license is null."
+      },
+      {
+        "registry": "developer-resources",
+        "record_id": "lmdeploy",
+        "field_name": "license",
+        "severity": "high",
+        "reason": "Resource marked open_source=true but license is null."
+      },
+      {
+        "registry": "developer-resources",
+        "record_id": "safetensors",
+        "field_name": "license",
+        "severity": "high",
+        "reason": "Resource marked open_source=true but license is null."
+      },
+      {
+        "registry": "developer-resources",
+        "record_id": "tokenizers",
+        "field_name": "license",
+        "severity": "high",
+        "reason": "Resource marked open_source=true but license is null."
+      },
+      {
+        "registry": "developer-resources",
+        "record_id": "instructor-go",
+        "field_name": "license",
+        "severity": "high",
+        "reason": "Resource marked open_source=true but license is null."
+      },
+      {
+        "registry": "developer-resources",
+        "record_id": "instructor-elixir",
+        "field_name": "license",
+        "severity": "high",
+        "reason": "Resource marked open_source=true but license is null."
+      },
+      {
+        "registry": "developer-resources",
+        "record_id": "pydantic-core",
+        "field_name": "license",
+        "severity": "high",
+        "reason": "Resource marked open_source=true but license is null."
+      },
+      {
+        "registry": "developer-resources",
+        "record_id": "jsonargparse",
+        "field_name": "license",
+        "severity": "high",
+        "reason": "Resource marked open_source=true but license is null."
+      },
+      {
+        "registry": "developer-resources",
+        "record_id": "mcp-java-sdk",
+        "field_name": "license",
+        "severity": "high",
+        "reason": "Resource marked open_source=true but license is null."
+      },
+      {
+        "registry": "developer-resources",
+        "record_id": "mcp-go-sdk",
+        "field_name": "license",
+        "severity": "high",
+        "reason": "Resource marked open_source=true but license is null."
+      },
+      {
+        "registry": "developer-resources",
+        "record_id": "langgraph-cli",
+        "field_name": "license",
+        "severity": "high",
+        "reason": "Resource marked open_source=true but license is null."
+      },
+      {
+        "registry": "developer-resources",
+        "record_id": "ollama-sharp",
+        "field_name": "license",
+        "severity": "high",
+        "reason": "Resource marked open_source=true but license is null."
+      },
+      {
+        "registry": "developer-resources",
+        "record_id": "vllm-rocm",
+        "field_name": "license",
+        "severity": "high",
+        "reason": "Resource marked open_source=true but license is null."
+      },
+      {
+        "registry": "developer-resources",
+        "record_id": "rocm",
+        "field_name": "license",
+        "severity": "high",
+        "reason": "Resource marked open_source=true but license is null."
+      },
+      {
+        "registry": "developer-resources",
+        "record_id": "triton-lang",
+        "field_name": "license",
+        "severity": "high",
+        "reason": "Resource marked open_source=true but license is null."
+      },
+      {
+        "registry": "developer-resources",
+        "record_id": "torch-tensorrt",
+        "field_name": "license",
+        "severity": "high",
+        "reason": "Resource marked open_source=true but license is null."
+      },
+      {
+        "registry": "developer-resources",
+        "record_id": "onnxruntime-genai",
+        "field_name": "license",
+        "severity": "high",
+        "reason": "Resource marked open_source=true but license is null."
+      },
+      {
+        "registry": "developer-resources",
+        "record_id": "whisper-cpp",
+        "field_name": "license",
+        "severity": "high",
+        "reason": "Resource marked open_source=true but license is null."
+      },
+      {
+        "registry": "developer-resources",
+        "record_id": "llama-cpp-python",
+        "field_name": "license",
+        "severity": "high",
+        "reason": "Resource marked open_source=true but license is null."
+      },
+      {
+        "registry": "developer-resources",
+        "record_id": "gguf-py",
+        "field_name": "license",
+        "severity": "high",
+        "reason": "Resource marked open_source=true but license is null."
+      },
+      {
+        "registry": "developer-resources",
+        "record_id": "llama-index-readers",
+        "field_name": "license",
+        "severity": "high",
+        "reason": "Resource marked open_source=true but license is null."
+      },
+      {
+        "registry": "developer-resources",
+        "record_id": "llama-index-vector-stores",
+        "field_name": "license",
+        "severity": "high",
+        "reason": "Resource marked open_source=true but license is null."
+      },
+      {
+        "registry": "developer-resources",
+        "record_id": "langchain-openai",
+        "field_name": "license",
+        "severity": "high",
+        "reason": "Resource marked open_source=true but license is null."
+      },
+      {
+        "registry": "developer-resources",
+        "record_id": "langchain-anthropic",
+        "field_name": "license",
+        "severity": "high",
+        "reason": "Resource marked open_source=true but license is null."
+      },
+      {
+        "registry": "developer-resources",
+        "record_id": "langchain-chroma",
+        "field_name": "license",
+        "severity": "high",
+        "reason": "Resource marked open_source=true but license is null."
+      },
+      {
+        "registry": "developer-resources",
+        "record_id": "semantic-kernel-csharp",
+        "field_name": "license",
+        "severity": "high",
+        "reason": "Resource marked open_source=true but license is null."
+      },
+      {
+        "registry": "developer-resources",
+        "record_id": "semantic-kernel-python-sdk",
+        "field_name": "license",
+        "severity": "high",
+        "reason": "Resource marked open_source=true but license is null."
+      },
+      {
+        "registry": "developer-resources",
+        "record_id": "semantic-kernel-java",
+        "field_name": "license",
+        "severity": "high",
+        "reason": "Resource marked open_source=true but license is null."
+      },
+      {
+        "registry": "developer-resources",
+        "record_id": "unsloth-zoo",
+        "field_name": "license",
+        "severity": "high",
+        "reason": "Resource marked open_source=true but license is null."
+      },
+      {
+        "registry": "developer-resources",
+        "record_id": "wildguard",
+        "field_name": "license",
+        "severity": "high",
+        "reason": "Resource marked open_source=true but license is null."
+      },
+      {
+        "registry": "developer-resources",
+        "record_id": "guardrails-hub",
+        "field_name": "license",
+        "severity": "high",
+        "reason": "Resource marked open_source=true but license is null."
+      },
+      {
+        "registry": "developer-resources",
+        "record_id": "mcp-proxy",
+        "field_name": "license",
+        "severity": "high",
+        "reason": "Resource marked open_source=true but license is null."
+      },
+      {
+        "registry": "developer-resources",
+        "record_id": "mcp-cli",
+        "field_name": "license",
+        "severity": "high",
+        "reason": "Resource marked open_source=true but license is null."
+      },
+      {
+        "registry": "developer-resources",
+        "record_id": "mcp-cli",
+        "field_name": "repository_url",
+        "severity": "medium",
+        "reason": "Open-source resource lacks top-level repository_url."
+      },
+      {
+        "registry": "developer-resources",
+        "record_id": "tensorrt-llm-python",
+        "field_name": "license",
+        "severity": "high",
+        "reason": "Resource marked open_source=true but license is null."
+      },
+      {
+        "registry": "developer-resources",
+        "record_id": "vllm-openai-server",
+        "field_name": "license",
+        "severity": "high",
+        "reason": "Resource marked open_source=true but license is null."
+      },
+      {
+        "registry": "developer-resources",
+        "record_id": "flash-attention-3",
+        "field_name": "license",
+        "severity": "high",
+        "reason": "Resource marked open_source=true but license is null."
+      },
+      {
+        "registry": "developer-resources",
+        "record_id": "nvidia-cutlass",
+        "field_name": "license",
+        "severity": "high",
+        "reason": "Resource marked open_source=true but license is null."
+      },
+      {
+        "registry": "developer-resources",
+        "record_id": "triton-inference-client",
+        "field_name": "license",
+        "severity": "high",
+        "reason": "Resource marked open_source=true but license is null."
+      },
+      {
+        "registry": "developer-resources",
+        "record_id": "vllm-flash-attn",
+        "field_name": "license",
+        "severity": "high",
+        "reason": "Resource marked open_source=true but license is null."
+      },
+      {
+        "registry": "developer-resources",
+        "record_id": "accelerate-fsdp",
+        "field_name": "license",
+        "severity": "high",
+        "reason": "Resource marked open_source=true but license is null."
+      },
+      {
+        "registry": "developer-resources",
+        "record_id": "accelerate-fsdp",
+        "field_name": "repository_url",
+        "severity": "medium",
+        "reason": "Open-source resource lacks top-level repository_url."
+      },
+      {
+        "registry": "developer-resources",
+        "record_id": "huggingface-diffusers",
+        "field_name": "license",
+        "severity": "high",
+        "reason": "Resource marked open_source=true but license is null."
+      },
+      {
+        "registry": "developer-resources",
+        "record_id": "huggingface-transformers",
+        "field_name": "license",
+        "severity": "high",
+        "reason": "Resource marked open_source=true but license is null."
+      },
+      {
+        "registry": "developer-resources",
+        "record_id": "huggingface-datasets",
+        "field_name": "license",
+        "severity": "high",
+        "reason": "Resource marked open_source=true but license is null."
+      },
+      {
+        "registry": "developer-resources",
+        "record_id": "huggingface-evaluate",
+        "field_name": "license",
+        "severity": "high",
+        "reason": "Resource marked open_source=true but license is null."
+      },
+      {
+        "registry": "developer-resources",
+        "record_id": "huggingface-safetensors",
+        "field_name": "license",
+        "severity": "high",
+        "reason": "Resource marked open_source=true but license is null."
+      },
+      {
+        "registry": "developer-resources",
+        "record_id": "huggingface-tokenizers",
+        "field_name": "license",
+        "severity": "high",
+        "reason": "Resource marked open_source=true but license is null."
+      },
+      {
+        "registry": "developer-resources",
+        "record_id": "huggingface-optimum-intel",
+        "field_name": "license",
+        "severity": "high",
+        "reason": "Resource marked open_source=true but license is null."
+      },
+      {
+        "registry": "developer-resources",
+        "record_id": "huggingface-optimum-nvidia",
+        "field_name": "license",
+        "severity": "high",
+        "reason": "Resource marked open_source=true but license is null."
+      },
+      {
+        "registry": "developer-resources",
+        "record_id": "huggingface-optimum-amd",
+        "field_name": "license",
+        "severity": "high",
+        "reason": "Resource marked open_source=true but license is null."
+      },
+      {
+        "registry": "developer-resources",
+        "record_id": "tensorrt-llm-backend",
+        "field_name": "license",
+        "severity": "high",
+        "reason": "Resource marked open_source=true but license is null."
+      },
+      {
+        "registry": "developer-resources",
+        "record_id": "playwright-python",
+        "field_name": "license",
+        "severity": "high",
+        "reason": "Resource marked open_source=true but license is null."
+      },
+      {
+        "registry": "developer-resources",
+        "record_id": "cypress",
+        "field_name": "license",
+        "severity": "high",
+        "reason": "Resource marked open_source=true but license is null."
+      },
+      {
+        "registry": "developer-resources",
+        "record_id": "selenium",
+        "field_name": "license",
+        "severity": "high",
+        "reason": "Resource marked open_source=true but license is null."
+      },
+      {
+        "registry": "developer-resources",
+        "record_id": "appium",
+        "field_name": "license",
+        "severity": "high",
+        "reason": "Resource marked open_source=true but license is null."
+      },
+      {
+        "registry": "developer-resources",
+        "record_id": "locust",
+        "field_name": "license",
+        "severity": "high",
+        "reason": "Resource marked open_source=true but license is null."
+      },
+      {
+        "registry": "developer-resources",
+        "record_id": "k6",
+        "field_name": "license",
+        "severity": "high",
+        "reason": "Resource marked open_source=true but license is null."
+      },
+      {
+        "registry": "developer-resources",
+        "record_id": "pytest",
+        "field_name": "license",
+        "severity": "high",
+        "reason": "Resource marked open_source=true but license is null."
+      },
+      {
+        "registry": "developer-resources",
+        "record_id": "testcontainers",
+        "field_name": "license",
+        "severity": "high",
+        "reason": "Resource marked open_source=true but license is null."
+      },
+      {
+        "registry": "developer-resources",
+        "record_id": "mock-server",
+        "field_name": "license",
+        "severity": "high",
+        "reason": "Resource marked open_source=true but license is null."
+      },
+      {
+        "registry": "developer-resources",
+        "record_id": "wiremock",
+        "field_name": "license",
+        "severity": "high",
+        "reason": "Resource marked open_source=true but license is null."
+      },
+      {
+        "registry": "developer-resources",
+        "record_id": "mosaicml-composer",
+        "field_name": "license",
+        "severity": "high",
+        "reason": "Resource marked open_source=true but license is null."
+      },
+      {
+        "registry": "developer-resources",
+        "record_id": "streaming-dataset",
+        "field_name": "license",
+        "severity": "high",
+        "reason": "Resource marked open_source=true but license is null."
+      },
+      {
+        "registry": "developer-resources",
+        "record_id": "llm-foundry",
+        "field_name": "license",
+        "severity": "high",
+        "reason": "Resource marked open_source=true but license is null."
+      },
+      {
+        "registry": "developer-resources",
+        "record_id": "flagperf",
+        "field_name": "license",
+        "severity": "high",
+        "reason": "Resource marked open_source=true but license is null."
+      },
+      {
+        "registry": "developer-resources",
+        "record_id": "lerobot",
+        "field_name": "license",
+        "severity": "high",
+        "reason": "Resource marked open_source=true but license is null."
+      },
+      {
+        "registry": "developer-resources",
+        "record_id": "habitat-sim",
+        "field_name": "license",
+        "severity": "high",
+        "reason": "Resource marked open_source=true but license is null."
+      },
+      {
+        "registry": "developer-resources",
+        "record_id": "biotite",
+        "field_name": "license",
+        "severity": "high",
+        "reason": "Resource marked open_source=true but license is null."
+      }
+    ]
+  }
+}

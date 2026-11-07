@@ -1,0 +1,60 @@
+{
+  "total_records": 1003,
+  "total_valid_records": 1003,
+  "total_invalid_records": 0,
+  "overall_score": 99.24,
+  "overall_grade": "Excellent",
+  "is_release_ready": true,
+  "structural_gate_passed": true,
+  "dimensions": {
+    "structural_validity": {
+      "name": "structural_validity",
+      "weight": 0.2,
+      "raw_score": 100.0,
+      "weighted_score": 20.0,
+      "metric_summary": "100.0% records valid (1003/1003)"
+    },
+    "identity_integrity": {
+      "name": "identity_integrity",
+      "weight": 0.15,
+      "raw_score": 100.0,
+      "weighted_score": 15.0,
+      "metric_summary": "100.0% unique identities (0 duplicate IDs)"
+    },
+    "url_integrity": {
+      "name": "url_integrity",
+      "weight": 0.1,
+      "raw_score": 100.0,
+      "weighted_score": 10.0,
+      "metric_summary": "100.0% valid URLs"
+    },
+    "metadata_completeness": {
+      "name": "metadata_completeness",
+      "weight": 0.15,
+      "raw_score": 95.07,
+      "weighted_score": 14.26,
+      "metric_summary": "95.1% completeness index"
+    },
+    "evidence_coverage": {
+      "name": "evidence_coverage",
+      "weight": 0.15,
+      "raw_score": 100.0,
+      "weighted_score": 15.0,
+      "metric_summary": "100.0% evidence coverage"
+    },
+    "verification_integrity": {
+      "name": "verification_integrity",
+      "weight": 0.15,
+      "raw_score": 99.83,
+      "weighted_score": 14.97,
+      "metric_summary": "99.8% status consistency"
+    },
+    "freshness": {
+      "name": "freshness",
+      "weight": 0.1,
+      "raw_score": 100.0,
+      "weighted_score": 10.0,
+      "metric_summary": "100.0% verification freshness index"
+    }
+  }
+}

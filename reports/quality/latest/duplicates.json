@@ -1,0 +1,599 @@
+{
+  "total_records": 1003,
+  "has_identity_conflicts": false,
+  "duplicate_id_count": 0,
+  "duplicate_ids": [],
+  "cross_registry_collision_count": 0,
+  "cross_registry_id_collisions": [],
+  "duplicate_canonical_id_count": 0,
+  "duplicate_canonical_ids": [],
+  "shared_url_count": 26,
+  "url_findings": [
+    {
+      "normalized_url": "https://qodo.ai",
+      "classification": "shared_legitimate_url",
+      "reason": "Shared legitimate parent repository, vendor portal, or multi-checkpoint documentation hub.",
+      "recommended_action": "Preserve distinct records. Both represent legitimate individual entities.",
+      "records": [
+        {
+          "registry": "ai-tools",
+          "id": "qodo",
+          "name": "Qodo (formerly CodiumAI)",
+          "raw_url": "https://www.qodo.ai/"
+        },
+        {
+          "registry": "ai-tools",
+          "id": "pr-agent",
+          "name": "Qodo PR-Agent",
+          "raw_url": "https://www.qodo.ai/"
+        },
+        {
+          "registry": "ai-tools",
+          "id": "codiumate",
+          "name": "Codiumate",
+          "raw_url": "https://www.qodo.ai/"
+        }
+      ]
+    },
+    {
+      "normalized_url": "https://ai.google.dev/gemini-api/docs/models/gemini",
+      "classification": "shared_legitimate_url",
+      "reason": "Shared legitimate parent repository, vendor portal, or multi-checkpoint documentation hub.",
+      "recommended_action": "Preserve distinct records. Both represent legitimate individual entities.",
+      "records": [
+        {
+          "registry": "ai-models",
+          "id": "gemini-1-5-pro",
+          "name": "Gemini 1.5 Pro",
+          "raw_url": "https://ai.google.dev/gemini-api/docs/models/gemini"
+        },
+        {
+          "registry": "ai-models",
+          "id": "gemini-1-5-flash",
+          "name": "Gemini 1.5 Flash",
+          "raw_url": "https://ai.google.dev/gemini-api/docs/models/gemini"
+        },
+        {
+          "registry": "ai-models",
+          "id": "gemini-1-0-pro",
+          "name": "Gemini 1.0 Pro",
+          "raw_url": "https://ai.google.dev/gemini-api/docs/models/gemini"
+        },
+        {
+          "registry": "ai-models",
+          "id": "gemini-1-0-ultra",
+          "name": "Gemini 1.0 Ultra",
+          "raw_url": "https://ai.google.dev/gemini-api/docs/models/gemini"
+        }
+      ]
+    },
+    {
+      "normalized_url": "https://github.com/openai/whisper",
+      "classification": "shared_legitimate_url",
+      "reason": "Shared legitimate parent repository, vendor portal, or multi-checkpoint documentation hub.",
+      "recommended_action": "Preserve distinct records. Both represent legitimate individual entities.",
+      "records": [
+        {
+          "registry": "ai-models",
+          "id": "whisper",
+          "name": "Whisper",
+          "raw_url": "https://github.com/openai/whisper"
+        },
+        {
+          "registry": "ai-models",
+          "id": "whisper-large-v2",
+          "name": "Whisper-Large-v2",
+          "raw_url": "https://github.com/openai/whisper"
+        },
+        {
+          "registry": "ai-models",
+          "id": "whisper-tiny",
+          "name": "Whisper-Tiny",
+          "raw_url": "https://github.com/openai/whisper"
+        }
+      ]
+    },
+    {
+      "normalized_url": "https://huggingface.co/THUDM/CogVideoX-5b",
+      "classification": "probable_duplicate",
+      "reason": "Variant identifiers 'cogvideox vs cogvideox-5b' represent the exact same product at destination.",
+      "recommended_action": "Review in Phase 2 for canonical alias migration. Retain both IDs until migration approved.",
+      "records": [
+        {
+          "registry": "ai-models",
+          "id": "cogvideox",
+          "name": "CogVideoX",
+          "raw_url": "https://huggingface.co/THUDM/CogVideoX-5b"
+        },
+        {
+          "registry": "ai-models",
+          "id": "cogvideox-5b",
+          "name": "CogVideoX-5B",
+          "raw_url": "https://huggingface.co/THUDM/CogVideoX-5b"
+        }
+      ]
+    },
+    {
+      "normalized_url": "https://blackforestlabs.ai",
+      "classification": "shared_legitimate_url",
+      "reason": "Shared legitimate parent repository, vendor portal, or multi-checkpoint documentation hub.",
+      "recommended_action": "Preserve distinct records. Both represent legitimate individual entities.",
+      "records": [
+        {
+          "registry": "ai-models",
+          "id": "flux-1-dev",
+          "name": "FLUX.1 [dev]",
+          "raw_url": "https://blackforestlabs.ai/"
+        },
+        {
+          "registry": "ai-models",
+          "id": "flux-1-pro",
+          "name": "FLUX.1 [pro]",
+          "raw_url": "https://blackforestlabs.ai/"
+        }
+      ]
+    },
+    {
+      "normalized_url": "https://cohere.com/rerank",
+      "classification": "probable_duplicate",
+      "reason": "Variant identifiers 'cohere-rerank-3 vs cohere-rerank-v3' represent the exact same product at destination.",
+      "recommended_action": "Review in Phase 2 for canonical alias migration. Retain both IDs until migration approved.",
+      "records": [
+        {
+          "registry": "ai-models",
+          "id": "cohere-rerank-3",
+          "name": "Cohere Rerank 3",
+          "raw_url": "https://cohere.com/rerank"
+        },
+        {
+          "registry": "ai-models",
+          "id": "cohere-rerank-v3",
+          "name": "Cohere Rerank 3",
+          "raw_url": "https://cohere.com/rerank"
+        }
+      ]
+    },
+    {
+      "normalized_url": "https://github.com/OpenGVLab/InternVL",
+      "classification": "shared_legitimate_url",
+      "reason": "Shared legitimate parent repository, vendor portal, or multi-checkpoint documentation hub.",
+      "recommended_action": "Preserve distinct records. Both represent legitimate individual entities.",
+      "records": [
+        {
+          "registry": "ai-models",
+          "id": "internvl-2",
+          "name": "InternVL 2.0",
+          "raw_url": "https://github.com/OpenGVLab/InternVL"
+        },
+        {
+          "registry": "ai-models",
+          "id": "internvl-2-5-8b",
+          "name": "InternVL 2.5 8B",
+          "raw_url": "https://github.com/OpenGVLab/InternVL"
+        },
+        {
+          "registry": "ai-models",
+          "id": "internvl-2-1b",
+          "name": "InternVL 2 1B",
+          "raw_url": "https://github.com/OpenGVLab/InternVL"
+        },
+        {
+          "registry": "ai-models",
+          "id": "internvl-2-4b",
+          "name": "InternVL 2 4B",
+          "raw_url": "https://github.com/OpenGVLab/InternVL"
+        }
+      ]
+    },
+    {
+      "normalized_url": "https://github.com/THUDM/CogVLM",
+      "classification": "shared_legitimate_url",
+      "reason": "Shared legitimate parent repository, vendor portal, or multi-checkpoint documentation hub.",
+      "recommended_action": "Preserve distinct records. Both represent legitimate individual entities.",
+      "records": [
+        {
+          "registry": "ai-models",
+          "id": "cogvlm",
+          "name": "CogVLM",
+          "raw_url": "https://github.com/THUDM/CogVLM"
+        },
+        {
+          "registry": "ai-models",
+          "id": "cogagent",
+          "name": "CogAgent",
+          "raw_url": "https://github.com/THUDM/CogVLM"
+        }
+      ]
+    },
+    {
+      "normalized_url": "https://github.com/nlpxucan/WizardLM",
+      "classification": "shared_legitimate_url",
+      "reason": "Shared legitimate parent repository, vendor portal, or multi-checkpoint documentation hub.",
+      "recommended_action": "Preserve distinct records. Both represent legitimate individual entities.",
+      "records": [
+        {
+          "registry": "ai-models",
+          "id": "wizardcoder",
+          "name": "WizardCoder",
+          "raw_url": "https://github.com/nlpxucan/WizardLM"
+        },
+        {
+          "registry": "ai-models",
+          "id": "wizardmath",
+          "name": "WizardMath",
+          "raw_url": "https://github.com/nlpxucan/WizardLM"
+        }
+      ]
+    },
+    {
+      "normalized_url": "https://github.com/baichuan-inc/Baichuan2",
+      "classification": "shared_legitimate_url",
+      "reason": "Shared legitimate parent repository, vendor portal, or multi-checkpoint documentation hub.",
+      "recommended_action": "Preserve distinct records. Both represent legitimate individual entities.",
+      "records": [
+        {
+          "registry": "ai-models",
+          "id": "baichuan-2",
+          "name": "Baichuan 2",
+          "raw_url": "https://github.com/baichuan-inc/Baichuan2"
+        },
+        {
+          "registry": "ai-models",
+          "id": "baichuan2-13b",
+          "name": "Baichuan2-13B",
+          "raw_url": "https://github.com/baichuan-inc/Baichuan2"
+        },
+        {
+          "registry": "ai-models",
+          "id": "baichuan2-7b",
+          "name": "Baichuan2-7B",
+          "raw_url": "https://github.com/baichuan-inc/Baichuan2"
+        }
+      ]
+    },
+    {
+      "normalized_url": "https://github.com/deepseek-ai/DeepSeek-V2",
+      "classification": "shared_legitimate_url",
+      "reason": "Shared legitimate parent repository, vendor portal, or multi-checkpoint documentation hub.",
+      "recommended_action": "Preserve distinct records. Both represent legitimate individual entities.",
+      "records": [
+        {
+          "registry": "ai-models",
+          "id": "deepseek-v2",
+          "name": "DeepSeek-V2",
+          "raw_url": "https://github.com/deepseek-ai/DeepSeek-V2"
+        },
+        {
+          "registry": "ai-models",
+          "id": "deepseek-v2-chat",
+          "name": "DeepSeek-V2-Chat",
+          "raw_url": "https://github.com/deepseek-ai/DeepSeek-V2"
+        }
+      ]
+    },
+    {
+      "normalized_url": "https://github.com/QwenLM/Qwen",
+      "classification": "shared_legitimate_url",
+      "reason": "Shared legitimate parent repository, vendor portal, or multi-checkpoint documentation hub.",
+      "recommended_action": "Preserve distinct records. Both represent legitimate individual entities.",
+      "records": [
+        {
+          "registry": "ai-models",
+          "id": "qwen-72b",
+          "name": "Qwen-72B",
+          "raw_url": "https://github.com/QwenLM/Qwen"
+        },
+        {
+          "registry": "ai-models",
+          "id": "qwen-14b",
+          "name": "Qwen-14B",
+          "raw_url": "https://github.com/QwenLM/Qwen"
+        },
+        {
+          "registry": "ai-models",
+          "id": "qwen-7b",
+          "name": "Qwen-7B",
+          "raw_url": "https://github.com/QwenLM/Qwen"
+        }
+      ]
+    },
+    {
+      "normalized_url": "https://github.com/THUDM/ChatGLM-6B",
+      "classification": "shared_legitimate_url",
+      "reason": "Shared legitimate parent repository, vendor portal, or multi-checkpoint documentation hub.",
+      "recommended_action": "Preserve distinct records. Both represent legitimate individual entities.",
+      "records": [
+        {
+          "registry": "ai-models",
+          "id": "chatglm-6b",
+          "name": "ChatGLM-6B",
+          "raw_url": "https://github.com/THUDM/ChatGLM-6B"
+        },
+        {
+          "registry": "ai-models",
+          "id": "chatglm-med",
+          "name": "ChatGLM-Med",
+          "raw_url": "https://github.com/THUDM/ChatGLM-6B"
+        }
+      ]
+    },
+    {
+      "normalized_url": "https://github.com/THUDM/GLM-Edge",
+      "classification": "shared_legitimate_url",
+      "reason": "Shared legitimate parent repository, vendor portal, or multi-checkpoint documentation hub.",
+      "recommended_action": "Preserve distinct records. Both represent legitimate individual entities.",
+      "records": [
+        {
+          "registry": "ai-models",
+          "id": "glm-edge-v-5b",
+          "name": "GLM-Edge-V-5B",
+          "raw_url": "https://github.com/THUDM/GLM-Edge"
+        },
+        {
+          "registry": "ai-models",
+          "id": "glm-edge-1-5b",
+          "name": "GLM-Edge-1.5B",
+          "raw_url": "https://github.com/THUDM/GLM-Edge"
+        }
+      ]
+    },
+    {
+      "normalized_url": "https://github.com/mosaicml/llm-foundry",
+      "classification": "shared_legitimate_url",
+      "reason": "Shared legitimate parent repository, vendor portal, or multi-checkpoint documentation hub.",
+      "recommended_action": "Preserve distinct records. Both represent legitimate individual entities.",
+      "records": [
+        {
+          "registry": "ai-models",
+          "id": "mpt-7b",
+          "name": "MPT-7B",
+          "raw_url": "https://github.com/mosaicml/llm-foundry"
+        },
+        {
+          "registry": "ai-models",
+          "id": "mpt-30b",
+          "name": "MPT-30B",
+          "raw_url": "https://github.com/mosaicml/llm-foundry"
+        },
+        {
+          "registry": "developer-resources",
+          "id": "llm-foundry",
+          "name": "MosaicML LLM Foundry",
+          "raw_url": "https://github.com/mosaicml/llm-foundry"
+        }
+      ]
+    },
+    {
+      "normalized_url": "https://modelcontextprotocol.io",
+      "classification": "shared_legitimate_url",
+      "reason": "Shared legitimate parent repository, vendor portal, or multi-checkpoint documentation hub.",
+      "recommended_action": "Preserve distinct records. Both represent legitimate individual entities.",
+      "records": [
+        {
+          "registry": "developer-resources",
+          "id": "mcp-sdk",
+          "name": "Model Context Protocol SDK",
+          "raw_url": "https://modelcontextprotocol.io/"
+        },
+        {
+          "registry": "developer-resources",
+          "id": "mcp-spec",
+          "name": "Model Context Protocol Specification",
+          "raw_url": "https://modelcontextprotocol.io/"
+        }
+      ]
+    },
+    {
+      "normalized_url": "https://github.com/sgl-project/sglang",
+      "classification": "shared_legitimate_url",
+      "reason": "Shared legitimate parent repository, vendor portal, or multi-checkpoint documentation hub.",
+      "recommended_action": "Preserve distinct records. Both represent legitimate individual entities.",
+      "records": [
+        {
+          "registry": "developer-resources",
+          "id": "sglang",
+          "name": "SGLang",
+          "raw_url": "https://github.com/sgl-project/sglang"
+        },
+        {
+          "registry": "developer-resources",
+          "id": "sglang-srt",
+          "name": "SGLang SRT",
+          "raw_url": "https://github.com/sgl-project/sglang"
+        }
+      ]
+    },
+    {
+      "normalized_url": "https://github.com/NVIDIA/TensorRT-LLM",
+      "classification": "shared_legitimate_url",
+      "reason": "Shared legitimate parent repository, vendor portal, or multi-checkpoint documentation hub.",
+      "recommended_action": "Preserve distinct records. Both represent legitimate individual entities.",
+      "records": [
+        {
+          "registry": "developer-resources",
+          "id": "tensorrt-llm",
+          "name": "TensorRT-LLM",
+          "raw_url": "https://github.com/NVIDIA/TensorRT-LLM"
+        },
+        {
+          "registry": "developer-resources",
+          "id": "tensorrt-llm-python",
+          "name": "TensorRT-LLM Python API",
+          "raw_url": "https://github.com/NVIDIA/TensorRT-LLM"
+        }
+      ]
+    },
+    {
+      "normalized_url": "https://github.com/microsoft/semantic-kernel",
+      "classification": "shared_legitimate_url",
+      "reason": "Shared legitimate parent repository, vendor portal, or multi-checkpoint documentation hub.",
+      "recommended_action": "Preserve distinct records. Both represent legitimate individual entities.",
+      "records": [
+        {
+          "registry": "developer-resources",
+          "id": "semantic-kernel",
+          "name": "Semantic Kernel",
+          "raw_url": "https://github.com/microsoft/semantic-kernel"
+        },
+        {
+          "registry": "developer-resources",
+          "id": "semantic-kernel-csharp",
+          "name": "Semantic Kernel C# SDK",
+          "raw_url": "https://github.com/microsoft/semantic-kernel"
+        }
+      ]
+    },
+    {
+      "normalized_url": "https://github.com/Dao-AILab/flash-attention",
+      "classification": "shared_legitimate_url",
+      "reason": "Shared legitimate parent repository, vendor portal, or multi-checkpoint documentation hub.",
+      "recommended_action": "Preserve distinct records. Both represent legitimate individual entities.",
+      "records": [
+        {
+          "registry": "developer-resources",
+          "id": "flashattention",
+          "name": "FlashAttention",
+          "raw_url": "https://github.com/Dao-AILab/flash-attention"
+        },
+        {
+          "registry": "developer-resources",
+          "id": "flash-decoding",
+          "name": "Flash-Decoding",
+          "raw_url": "https://github.com/Dao-AILab/flash-attention"
+        },
+        {
+          "registry": "developer-resources",
+          "id": "flashattention-2",
+          "name": "Flash-Attention-2",
+          "raw_url": "https://github.com/Dao-AILab/flash-attention"
+        },
+        {
+          "registry": "developer-resources",
+          "id": "flash-attention-3",
+          "name": "FlashAttention-3",
+          "raw_url": "https://github.com/Dao-AILab/flash-attention"
+        }
+      ]
+    },
+    {
+      "normalized_url": "https://github.com/triton-inference-server/tensorrt_llm_backend",
+      "classification": "probable_duplicate",
+      "reason": "Variant identifiers 'tensorrt-llm-triton vs tensorrt-llm-backend' represent the exact same product at destination.",
+      "recommended_action": "Review in Phase 2 for canonical alias migration. Retain both IDs until migration approved.",
+      "records": [
+        {
+          "registry": "developer-resources",
+          "id": "tensorrt-llm-triton",
+          "name": "TensorRT-LLM Triton Backend",
+          "raw_url": "https://github.com/triton-inference-server/tensorrt_llm_backend"
+        },
+        {
+          "registry": "developer-resources",
+          "id": "tensorrt-llm-backend",
+          "name": "TensorRT-LLM Triton Backend",
+          "raw_url": "https://github.com/triton-inference-server/tensorrt_llm_backend"
+        }
+      ]
+    },
+    {
+      "normalized_url": "https://github.com/NVIDIA/cutlass",
+      "classification": "probable_duplicate",
+      "reason": "Variant identifiers 'cutlass vs nvidia-cutlass' represent the exact same product at destination.",
+      "recommended_action": "Review in Phase 2 for canonical alias migration. Retain both IDs until migration approved.",
+      "records": [
+        {
+          "registry": "developer-resources",
+          "id": "cutlass",
+          "name": "NVIDIA CUTLASS",
+          "raw_url": "https://github.com/NVIDIA/cutlass"
+        },
+        {
+          "registry": "developer-resources",
+          "id": "nvidia-cutlass",
+          "name": "NVIDIA CUTLASS",
+          "raw_url": "https://github.com/NVIDIA/cutlass"
+        }
+      ]
+    },
+    {
+      "normalized_url": "https://github.com/triton-inference-server/client",
+      "classification": "probable_duplicate",
+      "reason": "Variant identifiers 'triton-client vs triton-inference-client' represent the exact same product at destination.",
+      "recommended_action": "Review in Phase 2 for canonical alias migration. Retain both IDs until migration approved.",
+      "records": [
+        {
+          "registry": "developer-resources",
+          "id": "triton-client",
+          "name": "Triton Client Libraries",
+          "raw_url": "https://github.com/triton-inference-server/client"
+        },
+        {
+          "registry": "developer-resources",
+          "id": "triton-inference-client",
+          "name": "Triton Client SDK",
+          "raw_url": "https://github.com/triton-inference-server/client"
+        }
+      ]
+    },
+    {
+      "normalized_url": "https://github.com/InternLM/lmdeploy",
+      "classification": "shared_legitimate_url",
+      "reason": "Shared legitimate parent repository, vendor portal, or multi-checkpoint documentation hub.",
+      "recommended_action": "Preserve distinct records. Both represent legitimate individual entities.",
+      "records": [
+        {
+          "registry": "developer-resources",
+          "id": "turbomind",
+          "name": "TurboMind",
+          "raw_url": "https://github.com/InternLM/lmdeploy"
+        },
+        {
+          "registry": "developer-resources",
+          "id": "lmdeploy",
+          "name": "LMDeploy",
+          "raw_url": "https://github.com/InternLM/lmdeploy"
+        }
+      ]
+    },
+    {
+      "normalized_url": "https://github.com/huggingface/safetensors",
+      "classification": "probable_duplicate",
+      "reason": "Variant identifiers 'safetensors vs huggingface-safetensors' represent the exact same product at destination.",
+      "recommended_action": "Review in Phase 2 for canonical alias migration. Retain both IDs until migration approved.",
+      "records": [
+        {
+          "registry": "developer-resources",
+          "id": "safetensors",
+          "name": "Safetensors",
+          "raw_url": "https://github.com/huggingface/safetensors"
+        },
+        {
+          "registry": "developer-resources",
+          "id": "huggingface-safetensors",
+          "name": "Hugging Face SafeTensors",
+          "raw_url": "https://github.com/huggingface/safetensors"
+        }
+      ]
+    },
+    {
+      "normalized_url": "https://github.com/huggingface/tokenizers",
+      "classification": "probable_duplicate",
+      "reason": "Variant identifiers 'tokenizers vs huggingface-tokenizers' represent the exact same product at destination.",
+      "recommended_action": "Review in Phase 2 for canonical alias migration. Retain both IDs until migration approved.",
+      "records": [
+        {
+          "registry": "developer-resources",
+          "id": "tokenizers",
+          "name": "Tokenizers",
+          "raw_url": "https://github.com/huggingface/tokenizers"
+        },
+        {
+          "registry": "developer-resources",
+          "id": "huggingface-tokenizers",
+          "name": "Hugging Face Tokenizers",
+          "raw_url": "https://github.com/huggingface/tokenizers"
+        }
+      ]
+    }
+  ]
+}

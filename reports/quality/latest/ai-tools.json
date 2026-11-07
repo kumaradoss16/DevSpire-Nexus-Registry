@@ -1,0 +1,238 @@
+{
+  "structural": {
+    "registry": "ai-tools",
+    "is_valid": true,
+    "total_records": 403,
+    "valid_records": 403,
+    "invalid_records": 0,
+    "error_count": 0,
+    "errors": [],
+    "warnings": []
+  },
+  "metadata": {
+    "registry": "ai-tools",
+    "total_records": 403,
+    "completeness_percentage": 99.94,
+    "missing_critical": 0,
+    "missing_high": 0,
+    "missing_medium": 3,
+    "missing_low": 10,
+    "findings_count": 13,
+    "findings": [
+      {
+        "registry": "ai-tools",
+        "record_id": "phind",
+        "field_name": "icon",
+        "severity": "low",
+        "reason": "Resource visual icon is null."
+      },
+      {
+        "registry": "ai-tools",
+        "record_id": "tome",
+        "field_name": "icon",
+        "severity": "low",
+        "reason": "Resource visual icon is null."
+      },
+      {
+        "registry": "ai-tools",
+        "record_id": "play-ht",
+        "field_name": "icon",
+        "severity": "low",
+        "reason": "Resource visual icon is null."
+      },
+      {
+        "registry": "ai-tools",
+        "record_id": "haiper-ai",
+        "field_name": "icon",
+        "severity": "low",
+        "reason": "Resource visual icon is null."
+      },
+      {
+        "registry": "ai-tools",
+        "record_id": "heyday",
+        "field_name": "icon",
+        "severity": "low",
+        "reason": "Resource visual icon is null."
+      },
+      {
+        "registry": "ai-tools",
+        "record_id": "mutable-ai",
+        "field_name": "icon",
+        "severity": "low",
+        "reason": "Resource visual icon is null."
+      },
+      {
+        "registry": "ai-tools",
+        "record_id": "visual-electric",
+        "field_name": "icon",
+        "severity": "low",
+        "reason": "Resource visual icon is null."
+      },
+      {
+        "registry": "ai-tools",
+        "record_id": "bluedot",
+        "field_name": "icon",
+        "severity": "low",
+        "reason": "Resource visual icon is null."
+      },
+      {
+        "registry": "ai-tools",
+        "record_id": "pymetrics",
+        "field_name": "icon",
+        "severity": "low",
+        "reason": "Resource visual icon is null."
+      },
+      {
+        "registry": "ai-tools",
+        "record_id": "lacework",
+        "field_name": "icon",
+        "severity": "low",
+        "reason": "Resource visual icon is null."
+      },
+      {
+        "registry": "ai-tools",
+        "record_id": "gemini",
+        "field_name": "signup_required",
+        "severity": "medium",
+        "reason": "signup_required flag is unspecified (null)."
+      },
+      {
+        "registry": "ai-tools",
+        "record_id": "grok",
+        "field_name": "signup_required",
+        "severity": "medium",
+        "reason": "signup_required flag is unspecified (null)."
+      },
+      {
+        "registry": "ai-tools",
+        "record_id": "notebooklm",
+        "field_name": "signup_required",
+        "severity": "medium",
+        "reason": "signup_required flag is unspecified (null)."
+      }
+    ]
+  },
+  "evidence": {
+    "registry": "ai-tools",
+    "total_records": 403,
+    "records_with_evidence": 403,
+    "records_with_zero_evidence": 0,
+    "records_with_primary_evidence": 401,
+    "coverage_percentage": 100.0,
+    "archetype_distribution": {
+      "official_website": 485,
+      "official_documentation": 30,
+      "source_repository": 23,
+      "announcement": 5,
+      "model_card": 1,
+      "community_source": 2
+    },
+    "insufficient_evidence_count": 2,
+    "insufficient_evidence_records": [
+      "alteryx-aidin",
+      "checkmarx-ai"
+    ]
+  },
+  "verification": {
+    "registry": "ai-tools",
+    "total_records": 403,
+    "compliant_records": 401,
+    "integrity_percentage": 99.5,
+    "status_counts": {
+      "verified": 403
+    },
+    "violation_count": 2,
+    "violations": [
+      {
+        "record_id": "alteryx-aidin",
+        "registry": "ai-tools",
+        "current_status": "verified",
+        "violation_type": "INSUFFICIENT_PRIMARY_EVIDENCE",
+        "message": "Record contains only secondary/community sources without primary evidence.",
+        "recommended_status": "partially_verified"
+      },
+      {
+        "record_id": "checkmarx-ai",
+        "registry": "ai-tools",
+        "current_status": "verified",
+        "violation_type": "INSUFFICIENT_PRIMARY_EVIDENCE",
+        "message": "Record contains only secondary/community sources without primary evidence.",
+        "recommended_status": "partially_verified"
+      }
+    ]
+  },
+  "freshness": {
+    "registry": "ai-tools",
+    "total_records": 403,
+    "freshness_percentage": 100.0,
+    "fresh_count": 403,
+    "current_count": 0,
+    "aging_count": 0,
+    "stale_count": 0,
+    "unknown_count": 0,
+    "stale_records": []
+  },
+  "score": {
+    "registry": "ai-tools",
+    "methodology_version": "1.0.0",
+    "assessed_at": "2026-11-07T06:16:12.646584+00:00",
+    "total_records": 403,
+    "overall_score": 99.88,
+    "grade": "Excellent",
+    "is_release_ready": true,
+    "structural_gate_passed": true,
+    "dimensions": {
+      "structural_validity": {
+        "name": "structural_validity",
+        "weight": 0.2,
+        "raw_score": 100.0,
+        "weighted_score": 20.0,
+        "metric_summary": "100.0% records valid (403/403)"
+      },
+      "identity_integrity": {
+        "name": "identity_integrity",
+        "weight": 0.15,
+        "raw_score": 100.0,
+        "weighted_score": 15.0,
+        "metric_summary": "100.0% unique identities (0 duplicate IDs)"
+      },
+      "url_integrity": {
+        "name": "url_integrity",
+        "weight": 0.1,
+        "raw_score": 99.63,
+        "weighted_score": 9.96,
+        "metric_summary": "99.6% valid URLs"
+      },
+      "metadata_completeness": {
+        "name": "metadata_completeness",
+        "weight": 0.15,
+        "raw_score": 99.94,
+        "weighted_score": 14.99,
+        "metric_summary": "99.9% completeness index"
+      },
+      "evidence_coverage": {
+        "name": "evidence_coverage",
+        "weight": 0.15,
+        "raw_score": 100.0,
+        "weighted_score": 15.0,
+        "metric_summary": "100.0% evidence coverage"
+      },
+      "verification_integrity": {
+        "name": "verification_integrity",
+        "weight": 0.15,
+        "raw_score": 99.5,
+        "weighted_score": 14.92,
+        "metric_summary": "99.5% status consistency"
+      },
+      "freshness": {
+        "name": "freshness",
+        "weight": 0.1,
+        "raw_score": 100.0,
+        "weighted_score": 10.0,
+        "metric_summary": "100.0% verification freshness index"
+      }
+    },
+    "blocking_issues": [],
+    "warnings": []
+  }
+}

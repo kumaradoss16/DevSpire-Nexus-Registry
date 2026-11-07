@@ -1,0 +1,35 @@
+{
+  "ai-tools": {
+    "registry": "ai-tools",
+    "total_records": 403,
+    "freshness_percentage": 100.0,
+    "fresh_count": 403,
+    "current_count": 0,
+    "aging_count": 0,
+    "stale_count": 0,
+    "unknown_count": 0,
+    "stale_records": []
+  },
+  "ai-models": {
+    "registry": "ai-models",
+    "total_records": 300,
+    "freshness_percentage": 100.0,
+    "fresh_count": 300,
+    "current_count": 0,
+    "aging_count": 0,
+    "stale_count": 0,
+    "unknown_count": 0,
+    "stale_records": []
+  },
+  "developer-resources": {
+    "registry": "developer-resources",
+    "total_records": 300,
+    "freshness_percentage": 100.0,
+    "fresh_count": 300,
+    "current_count": 0,
+    "aging_count": 0,
+    "stale_count": 0,
+    "unknown_count": 0,
+    "stale_records": []
+  }
+}

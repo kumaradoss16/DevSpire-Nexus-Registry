@@ -1,0 +1,645 @@
+{
+  "structural": {
+    "registry": "ai-models",
+    "is_valid": true,
+    "total_records": 300,
+    "valid_records": 300,
+    "invalid_records": 0,
+    "error_count": 0,
+    "errors": [],
+    "warnings": []
+  },
+  "metadata": {
+    "registry": "ai-models",
+    "total_records": 300,
+    "completeness_percentage": 99.75,
+    "missing_critical": 0,
+    "missing_high": 0,
+    "missing_medium": 0,
+    "missing_low": 74,
+    "findings_count": 74,
+    "findings": [
+      {
+        "registry": "ai-models",
+        "record_id": "flux-1-schnell",
+        "field_name": "context_k",
+        "severity": "low",
+        "reason": "Quantitative context window token limit is unspecified."
+      },
+      {
+        "registry": "ai-models",
+        "record_id": "whisper",
+        "field_name": "context_k",
+        "severity": "low",
+        "reason": "Quantitative context window token limit is unspecified."
+      },
+      {
+        "registry": "ai-models",
+        "record_id": "stable-diffusion-3-5",
+        "field_name": "context_k",
+        "severity": "low",
+        "reason": "Quantitative context window token limit is unspecified."
+      },
+      {
+        "registry": "ai-models",
+        "record_id": "musicgen",
+        "field_name": "context_k",
+        "severity": "low",
+        "reason": "Quantitative context window token limit is unspecified."
+      },
+      {
+        "registry": "ai-models",
+        "record_id": "sam-2",
+        "field_name": "context_k",
+        "severity": "low",
+        "reason": "Quantitative context window token limit is unspecified."
+      },
+      {
+        "registry": "ai-models",
+        "record_id": "dinov2",
+        "field_name": "context_k",
+        "severity": "low",
+        "reason": "Quantitative context window token limit is unspecified."
+      },
+      {
+        "registry": "ai-models",
+        "record_id": "clip",
+        "field_name": "context_k",
+        "severity": "low",
+        "reason": "Quantitative context window token limit is unspecified."
+      },
+      {
+        "registry": "ai-models",
+        "record_id": "hunyuan-video",
+        "field_name": "context_k",
+        "severity": "low",
+        "reason": "Quantitative context window token limit is unspecified."
+      },
+      {
+        "registry": "ai-models",
+        "record_id": "cogvideox",
+        "field_name": "context_k",
+        "severity": "low",
+        "reason": "Quantitative context window token limit is unspecified."
+      },
+      {
+        "registry": "ai-models",
+        "record_id": "xtts-v2",
+        "field_name": "context_k",
+        "severity": "low",
+        "reason": "Quantitative context window token limit is unspecified."
+      },
+      {
+        "registry": "ai-models",
+        "record_id": "flux-1-dev",
+        "field_name": "context_k",
+        "severity": "low",
+        "reason": "Quantitative context window token limit is unspecified."
+      },
+      {
+        "registry": "ai-models",
+        "record_id": "sdxl",
+        "field_name": "context_k",
+        "severity": "low",
+        "reason": "Quantitative context window token limit is unspecified."
+      },
+      {
+        "registry": "ai-models",
+        "record_id": "kolors",
+        "field_name": "context_k",
+        "severity": "low",
+        "reason": "Quantitative context window token limit is unspecified."
+      },
+      {
+        "registry": "ai-models",
+        "record_id": "bark",
+        "field_name": "context_k",
+        "severity": "low",
+        "reason": "Quantitative context window token limit is unspecified."
+      },
+      {
+        "registry": "ai-models",
+        "record_id": "whisper-large-v3-turbo",
+        "field_name": "context_k",
+        "severity": "low",
+        "reason": "Quantitative context window token limit is unspecified."
+      },
+      {
+        "registry": "ai-models",
+        "record_id": "stable-audio-open",
+        "field_name": "context_k",
+        "severity": "low",
+        "reason": "Quantitative context window token limit is unspecified."
+      },
+      {
+        "registry": "ai-models",
+        "record_id": "stable-video-diffusion",
+        "field_name": "context_k",
+        "severity": "low",
+        "reason": "Quantitative context window token limit is unspecified."
+      },
+      {
+        "registry": "ai-models",
+        "record_id": "jukebox",
+        "field_name": "context_k",
+        "severity": "low",
+        "reason": "Quantitative context window token limit is unspecified."
+      },
+      {
+        "registry": "ai-models",
+        "record_id": "yolov8",
+        "field_name": "context_k",
+        "severity": "low",
+        "reason": "Quantitative context window token limit is unspecified."
+      },
+      {
+        "registry": "ai-models",
+        "record_id": "grounding-dino",
+        "field_name": "context_k",
+        "severity": "low",
+        "reason": "Quantitative context window token limit is unspecified."
+      },
+      {
+        "registry": "ai-models",
+        "record_id": "sam-1",
+        "field_name": "context_k",
+        "severity": "low",
+        "reason": "Quantitative context window token limit is unspecified."
+      },
+      {
+        "registry": "ai-models",
+        "record_id": "depth-anything-v2",
+        "field_name": "context_k",
+        "severity": "low",
+        "reason": "Quantitative context window token limit is unspecified."
+      },
+      {
+        "registry": "ai-models",
+        "record_id": "fastsam",
+        "field_name": "context_k",
+        "severity": "low",
+        "reason": "Quantitative context window token limit is unspecified."
+      },
+      {
+        "registry": "ai-models",
+        "record_id": "stable-diffusion-2-1",
+        "field_name": "context_k",
+        "severity": "low",
+        "reason": "Quantitative context window token limit is unspecified."
+      },
+      {
+        "registry": "ai-models",
+        "record_id": "controlnet",
+        "field_name": "context_k",
+        "severity": "low",
+        "reason": "Quantitative context window token limit is unspecified."
+      },
+      {
+        "registry": "ai-models",
+        "record_id": "animatediff",
+        "field_name": "context_k",
+        "severity": "low",
+        "reason": "Quantitative context window token limit is unspecified."
+      },
+      {
+        "registry": "ai-models",
+        "record_id": "triposr",
+        "field_name": "context_k",
+        "severity": "low",
+        "reason": "Quantitative context window token limit is unspecified."
+      },
+      {
+        "registry": "ai-models",
+        "record_id": "instantmesh",
+        "field_name": "context_k",
+        "severity": "low",
+        "reason": "Quantitative context window token limit is unspecified."
+      },
+      {
+        "registry": "ai-models",
+        "record_id": "whisperx",
+        "field_name": "context_k",
+        "severity": "low",
+        "reason": "Quantitative context window token limit is unspecified."
+      },
+      {
+        "registry": "ai-models",
+        "record_id": "alphafold-3",
+        "field_name": "context_k",
+        "severity": "low",
+        "reason": "Quantitative context window token limit is unspecified."
+      },
+      {
+        "registry": "ai-models",
+        "record_id": "seamlessm4t",
+        "field_name": "context_k",
+        "severity": "low",
+        "reason": "Quantitative context window token limit is unspecified."
+      },
+      {
+        "registry": "ai-models",
+        "record_id": "openvoice",
+        "field_name": "context_k",
+        "severity": "low",
+        "reason": "Quantitative context window token limit is unspecified."
+      },
+      {
+        "registry": "ai-models",
+        "record_id": "mms-meta",
+        "field_name": "context_k",
+        "severity": "low",
+        "reason": "Quantitative context window token limit is unspecified."
+      },
+      {
+        "registry": "ai-models",
+        "record_id": "segformer",
+        "field_name": "context_k",
+        "severity": "low",
+        "reason": "Quantitative context window token limit is unspecified."
+      },
+      {
+        "registry": "ai-models",
+        "record_id": "musiclm",
+        "field_name": "context_k",
+        "severity": "low",
+        "reason": "Quantitative context window token limit is unspecified."
+      },
+      {
+        "registry": "ai-models",
+        "record_id": "sd-turbo",
+        "field_name": "context_k",
+        "severity": "low",
+        "reason": "Quantitative context window token limit is unspecified."
+      },
+      {
+        "registry": "ai-models",
+        "record_id": "lcm",
+        "field_name": "context_k",
+        "severity": "low",
+        "reason": "Quantitative context window token limit is unspecified."
+      },
+      {
+        "registry": "ai-models",
+        "record_id": "distil-whisper",
+        "field_name": "context_k",
+        "severity": "low",
+        "reason": "Quantitative context window token limit is unspecified."
+      },
+      {
+        "registry": "ai-models",
+        "record_id": "instructpix2pix",
+        "field_name": "context_k",
+        "severity": "low",
+        "reason": "Quantitative context window token limit is unspecified."
+      },
+      {
+        "registry": "ai-models",
+        "record_id": "cogview3",
+        "field_name": "context_k",
+        "severity": "low",
+        "reason": "Quantitative context window token limit is unspecified."
+      },
+      {
+        "registry": "ai-models",
+        "record_id": "yolos",
+        "field_name": "context_k",
+        "severity": "low",
+        "reason": "Quantitative context window token limit is unspecified."
+      },
+      {
+        "registry": "ai-models",
+        "record_id": "cosyvoice",
+        "field_name": "context_k",
+        "severity": "low",
+        "reason": "Quantitative context window token limit is unspecified."
+      },
+      {
+        "registry": "ai-models",
+        "record_id": "hq-sam",
+        "field_name": "context_k",
+        "severity": "low",
+        "reason": "Quantitative context window token limit is unspecified."
+      },
+      {
+        "registry": "ai-models",
+        "record_id": "open-sora",
+        "field_name": "context_k",
+        "severity": "low",
+        "reason": "Quantitative context window token limit is unspecified."
+      },
+      {
+        "registry": "ai-models",
+        "record_id": "stable-cascade",
+        "field_name": "context_k",
+        "severity": "low",
+        "reason": "Quantitative context window token limit is unspecified."
+      },
+      {
+        "registry": "ai-models",
+        "record_id": "sv3d",
+        "field_name": "context_k",
+        "severity": "low",
+        "reason": "Quantitative context window token limit is unspecified."
+      },
+      {
+        "registry": "ai-models",
+        "record_id": "point-e",
+        "field_name": "context_k",
+        "severity": "low",
+        "reason": "Quantitative context window token limit is unspecified."
+      },
+      {
+        "registry": "ai-models",
+        "record_id": "shap-e",
+        "field_name": "context_k",
+        "severity": "low",
+        "reason": "Quantitative context window token limit is unspecified."
+      },
+      {
+        "registry": "ai-models",
+        "record_id": "conformer-ctc",
+        "field_name": "context_k",
+        "severity": "low",
+        "reason": "Quantitative context window token limit is unspecified."
+      },
+      {
+        "registry": "ai-models",
+        "record_id": "animatediff-lightning",
+        "field_name": "context_k",
+        "severity": "low",
+        "reason": "Quantitative context window token limit is unspecified."
+      },
+      {
+        "registry": "ai-models",
+        "record_id": "stable-audio-2",
+        "field_name": "context_k",
+        "severity": "low",
+        "reason": "Quantitative context window token limit is unspecified."
+      },
+      {
+        "registry": "ai-models",
+        "record_id": "audioldm-2",
+        "field_name": "context_k",
+        "severity": "low",
+        "reason": "Quantitative context window token limit is unspecified."
+      },
+      {
+        "registry": "ai-models",
+        "record_id": "musicgen-melody",
+        "field_name": "context_k",
+        "severity": "low",
+        "reason": "Quantitative context window token limit is unspecified."
+      },
+      {
+        "registry": "ai-models",
+        "record_id": "whisper-large-v2",
+        "field_name": "context_k",
+        "severity": "low",
+        "reason": "Quantitative context window token limit is unspecified."
+      },
+      {
+        "registry": "ai-models",
+        "record_id": "crm-3d",
+        "field_name": "context_k",
+        "severity": "low",
+        "reason": "Quantitative context window token limit is unspecified."
+      },
+      {
+        "registry": "ai-models",
+        "record_id": "openshape",
+        "field_name": "context_k",
+        "severity": "low",
+        "reason": "Quantitative context window token limit is unspecified."
+      },
+      {
+        "registry": "ai-models",
+        "record_id": "rt-2",
+        "field_name": "context_k",
+        "severity": "low",
+        "reason": "Quantitative context window token limit is unspecified."
+      },
+      {
+        "registry": "ai-models",
+        "record_id": "whisper-tiny",
+        "field_name": "context_k",
+        "severity": "low",
+        "reason": "Quantitative context window token limit is unspecified."
+      },
+      {
+        "registry": "ai-models",
+        "record_id": "chattts",
+        "field_name": "context_k",
+        "severity": "low",
+        "reason": "Quantitative context window token limit is unspecified."
+      },
+      {
+        "registry": "ai-models",
+        "record_id": "f5-tts",
+        "field_name": "context_k",
+        "severity": "low",
+        "reason": "Quantitative context window token limit is unspecified."
+      },
+      {
+        "registry": "ai-models",
+        "record_id": "stable-diffusion-1-5",
+        "field_name": "context_k",
+        "severity": "low",
+        "reason": "Quantitative context window token limit is unspecified."
+      },
+      {
+        "registry": "ai-models",
+        "record_id": "pixart-alpha",
+        "field_name": "context_k",
+        "severity": "low",
+        "reason": "Quantitative context window token limit is unspecified."
+      },
+      {
+        "registry": "ai-models",
+        "record_id": "pixart-sigma",
+        "field_name": "context_k",
+        "severity": "low",
+        "reason": "Quantitative context window token limit is unspecified."
+      },
+      {
+        "registry": "ai-models",
+        "record_id": "zero123",
+        "field_name": "context_k",
+        "severity": "low",
+        "reason": "Quantitative context window token limit is unspecified."
+      },
+      {
+        "registry": "ai-models",
+        "record_id": "flux-1-pro",
+        "field_name": "context_k",
+        "severity": "low",
+        "reason": "Quantitative context window token limit is unspecified."
+      },
+      {
+        "registry": "ai-models",
+        "record_id": "nomic-embed-vision",
+        "field_name": "context_k",
+        "severity": "low",
+        "reason": "Quantitative context window token limit is unspecified."
+      },
+      {
+        "registry": "ai-models",
+        "record_id": "lgm-3d",
+        "field_name": "context_k",
+        "severity": "low",
+        "reason": "Quantitative context window token limit is unspecified."
+      },
+      {
+        "registry": "ai-models",
+        "record_id": "sdxl-turbo",
+        "field_name": "context_k",
+        "severity": "low",
+        "reason": "Quantitative context window token limit is unspecified."
+      },
+      {
+        "registry": "ai-models",
+        "record_id": "open-sora-plan",
+        "field_name": "context_k",
+        "severity": "low",
+        "reason": "Quantitative context window token limit is unspecified."
+      },
+      {
+        "registry": "ai-models",
+        "record_id": "cogvideox-5b",
+        "field_name": "context_k",
+        "severity": "low",
+        "reason": "Quantitative context window token limit is unspecified."
+      },
+      {
+        "registry": "ai-models",
+        "record_id": "octo",
+        "field_name": "context_k",
+        "severity": "low",
+        "reason": "Quantitative context window token limit is unspecified."
+      },
+      {
+        "registry": "ai-models",
+        "record_id": "openx-embodiment",
+        "field_name": "context_k",
+        "severity": "low",
+        "reason": "Quantitative context window token limit is unspecified."
+      },
+      {
+        "registry": "ai-models",
+        "record_id": "act-robotics",
+        "field_name": "context_k",
+        "severity": "low",
+        "reason": "Quantitative context window token limit is unspecified."
+      },
+      {
+        "registry": "ai-models",
+        "record_id": "diffusion-policy",
+        "field_name": "context_k",
+        "severity": "low",
+        "reason": "Quantitative context window token limit is unspecified."
+      }
+    ]
+  },
+  "evidence": {
+    "registry": "ai-models",
+    "total_records": 300,
+    "records_with_evidence": 300,
+    "records_with_zero_evidence": 0,
+    "records_with_primary_evidence": 300,
+    "coverage_percentage": 100.0,
+    "archetype_distribution": {
+      "official_documentation": 26,
+      "official_website": 96,
+      "model_card": 188,
+      "source_repository": 166,
+      "announcement": 85,
+      "research_paper": 55
+    },
+    "insufficient_evidence_count": 0,
+    "insufficient_evidence_records": []
+  },
+  "verification": {
+    "registry": "ai-models",
+    "total_records": 300,
+    "compliant_records": 300,
+    "integrity_percentage": 100.0,
+    "status_counts": {
+      "verified": 300
+    },
+    "violation_count": 0,
+    "violations": []
+  },
+  "freshness": {
+    "registry": "ai-models",
+    "total_records": 300,
+    "freshness_percentage": 100.0,
+    "fresh_count": 300,
+    "current_count": 0,
+    "aging_count": 0,
+    "stale_count": 0,
+    "unknown_count": 0,
+    "stale_records": []
+  },
+  "score": {
+    "registry": "ai-models",
+    "methodology_version": "1.0.0",
+    "assessed_at": "2026-11-07T06:16:12.680057+00:00",
+    "total_records": 300,
+    "overall_score": 99.95,
+    "grade": "Excellent",
+    "is_release_ready": true,
+    "structural_gate_passed": true,
+    "dimensions": {
+      "structural_validity": {
+        "name": "structural_validity",
+        "weight": 0.2,
+        "raw_score": 100.0,
+        "weighted_score": 20.0,
+        "metric_summary": "100.0% records valid (300/300)"
+      },
+      "identity_integrity": {
+        "name": "identity_integrity",
+        "weight": 0.15,
+        "raw_score": 100.0,
+        "weighted_score": 15.0,
+        "metric_summary": "100.0% unique identities (0 duplicate IDs)"
+      },
+      "url_integrity": {
+        "name": "url_integrity",
+        "weight": 0.1,
+        "raw_score": 99.84,
+        "weighted_score": 9.98,
+        "metric_summary": "99.8% valid URLs"
+      },
+      "metadata_completeness": {
+        "name": "metadata_completeness",
+        "weight": 0.15,
+        "raw_score": 99.75,
+        "weighted_score": 14.96,
+        "metric_summary": "99.8% completeness index"
+      },
+      "evidence_coverage": {
+        "name": "evidence_coverage",
+        "weight": 0.15,
+        "raw_score": 100.0,
+        "weighted_score": 15.0,
+        "metric_summary": "100.0% evidence coverage"
+      },
+      "verification_integrity": {
+        "name": "verification_integrity",
+        "weight": 0.15,
+        "raw_score": 100.0,
+        "weighted_score": 15.0,
+        "metric_summary": "100.0% status consistency"
+      },
+      "freshness": {
+        "name": "freshness",
+        "weight": 0.1,
+        "raw_score": 100.0,
+        "weighted_score": 10.0,
+        "metric_summary": "100.0% verification freshness index"
+      }
+    },
+    "blocking_issues": [],
+    "warnings": []
+  }
+}
